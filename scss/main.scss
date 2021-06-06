@@ -1,0 +1,125 @@
+@import "variables";
+@import "config";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-stack;
+  background-color: $main-color;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+// Header
+#header-home {
+  background: $secondary-color;
+  position: fixed;
+  width: 100%;
+  color: #fff;
+  z-index: 1;
+
+  #main-nav {
+    display: flex;
+    justify-content: space-between;
+    .nav-links {
+      span {
+        background-color: $special-color;
+        padding: 0.5rem;
+        border-radius: 10px;
+      }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      li {
+        margin-left: 2rem;
+        a {
+          text-decoration: none;
+          align-items: center;
+          color: #fff;
+          border-bottom: 2px transparent solid;
+          padding-bottom: 0.5rem;
+          transition: all 0.5s;
+        }
+
+        a:hover {
+          border-color: orange;
+        }
+      }
+    }
+  }
+}
+// Main section
+#content {
+  // Breadcrumbs
+  .breadcrumbs {
+    padding-top: 2rem;
+    position: relative;
+    .breadcrumbs-item {
+      position: absolute;
+      top: 4rem;
+      left: 25%;
+      .breadcrumbs-link {
+        color: lighten($main-color, 60%);
+        text-decoration: none;
+      }
+    }
+  }
+  padding-top: 1rem;
+  .container {
+    padding-top: 5rem;
+    display: flex;
+  }
+  // Main content
+
+  .main-content {
+    flex: 70%;
+    .article {
+      .article-content {
+        position: relative;
+        color: #fff;
+        font-size: 0.9rem;
+        text-align: left;
+        .article-title {
+          display: flex;
+          background-color: lighten($main-color, 7%);
+          max-width: 85%;
+          padding: 1rem 0;
+          text-align: left;
+          margin-bottom: 0.5rem;
+          img {
+            padding: 0;
+            margin: 0 1rem;
+          }
+        }
+
+        .article-details {
+          max-width: 85%;
+          color: lighten($main-color, 60%);
+        }
+
+        .article-actions {
+          position: absolute;
+        }
+        img {
+          margin: 1rem 0;
+          max-width: 85%;
+          background-color: $secondary-color;
+        }
+      }
+    }
+  }
+
+  .sidebar-content {
+    flex: 20%;
+    img {
+      width: 100%;
+      height: 1000px;
+    }
+  }
+}
