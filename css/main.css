@@ -267,16 +267,16 @@ ul {
   padding: 5rem 0 1rem 0;
 }
 
-#contact-section h1 {
+#contact-section h2 {
   text-align: center;
   color: #fff;
 }
 
-#contact-section .contact-border-line {
+#contact-section .border-line {
   width: 100px;
   height: 10px;
   background-color: #140024;
-  margin: 3rem auto;
+  margin: 2rem auto;
 }
 
 #contact-section .contact-form {
@@ -293,6 +293,7 @@ ul {
           box-sizing: border-box;
   margin: 1rem 0;
   border: none;
+  border-radius: 0.6rem;
   background: #111;
   padding: 1.5rem 3rem;
   outline: none;
@@ -325,6 +326,110 @@ ul {
 
 #contact-section .contact-form .contact-form-btn:hover {
   background-color: #4d008a;
+}
+
+#register-section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 5rem 0 1rem 0;
+}
+
+#register-section .register-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 0.6rem;
+  overflow: hidden;
+}
+
+#register-section .register-form .control-form {
+  position: relative;
+}
+
+#register-section .register-form .control-form i {
+  visibility: hidden;
+  position: absolute;
+  top: 25px;
+  right: 10px;
+}
+
+#register-section .register-form .control-form small {
+  visibility: hidden;
+  position: absolute;
+  bottom: -25px;
+  left: 10px;
+}
+
+#register-section .register-form .control-form input {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 3rem 0;
+  border: 1px solid;
+  border-radius: 0.6rem;
+  background: #111;
+  padding: 1.5rem 3rem;
+  outline: none;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#register-section .register-form .control-form .register-form-text:focus {
+  -webkit-box-shadow: 0 0 0.8rem 0.2rem #140024;
+          box-shadow: 0 0 0.8rem 0.2rem #140024;
+}
+
+#register-section .register-form .register-form-btn {
+  float: right;
+  border: 0;
+  background-color: #140024;
+  color: #fff;
+  padding: 0.8rem 3.5rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#register-section .register-form .register-form-btn:hover {
+  background-color: #4d008a;
+}
+
+#register-section h2 {
+  text-align: center;
+  color: #fff;
+}
+
+#register-section .border-line {
+  width: 100px;
+  height: 10px;
+  background-color: #140024;
+  margin: 2rem auto 1rem auto;
+}
+
+#register-section .control-form.success input {
+  border-color: #2ecc71;
+}
+
+#register-section .control-form.success i.fa-check-circle {
+  visibility: visible;
+  color: #2ecc71;
+}
+
+#register-section .control-form.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: #e74c3c;
+}
+
+#register-section .control-form.error input {
+  border-color: #e74c3c;
+}
+
+#register-section .control-form.error small {
+  visibility: visible;
+  color: #e74c3c;
 }
 
 #footer-main {

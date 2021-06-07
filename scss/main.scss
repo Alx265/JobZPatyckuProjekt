@@ -85,7 +85,6 @@ ul {
     display: flex;
   }
   // Main content
-
   .main-content {
     flex: 70%;
     .article {
@@ -144,15 +143,15 @@ ul {
 #contact-section {
   flex: 1;
   padding: 5rem 0 1rem 0;
-  h1 {
+  h2 {
     text-align: center;
     color: #fff;
   }
-  .contact-border-line {
+  .border-line {
     width: 100px;
     height: 10px;
     background-color: $special-color;
-    margin: 3rem auto;
+    margin: 2rem auto;
   }
   .contact-form {
     max-width: 600px;
@@ -165,6 +164,7 @@ ul {
       box-sizing: border-box;
       margin: 1rem 0;
       border: none;
+      border-radius: 0.6rem;
       background: #111;
       padding: 1.5rem 3rem;
       outline: none;
@@ -193,6 +193,94 @@ ul {
     }
   }
 }
+
+// Register form
+#register-section {
+  flex: 1;
+  padding: 5rem 0 1rem 0;
+  .register-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 0.6rem;
+    overflow: hidden;
+    .control-form {
+      position: relative;
+      i {
+        visibility: hidden;
+        position: absolute;
+        top: 25px;
+        right: 10px;
+      }
+
+      small {
+        visibility: hidden;
+        position: absolute;
+        bottom: -25px;
+        left: 10px;
+      }
+      input {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 3rem 0;
+        border: 1px solid;
+        border-radius: 0.6rem;
+        background: #111;
+        padding: 1.5rem 3rem;
+        outline: none;
+        color: #fff;
+        transition: 0.5s;
+      }
+
+      .register-form-text:focus {
+        box-shadow: 0 0 0.8rem 0.2rem $special-color;
+      }
+    }
+
+    .register-form-btn {
+      float: right;
+      border: 0;
+      background-color: $special-color;
+      color: #fff;
+      padding: 0.8rem 3.5rem;
+      border-radius: 1.5rem;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+    .register-form-btn:hover {
+      background-color: lighten($special-color, 20%);
+    }
+  }
+  h2 {
+    text-align: center;
+    color: #fff;
+  }
+  .border-line {
+    width: 100px;
+    height: 10px;
+    background-color: $special-color;
+    margin: 2rem auto 1rem auto;
+  }
+  .control-form.success input {
+    border-color: #2ecc71;
+  }
+  .control-form.success i.fa-check-circle {
+    visibility: visible;
+    color: #2ecc71;
+  }
+  .control-form.error i.fa-exclamation-circle {
+    visibility: visible;
+    color: #e74c3c;
+  }
+  .control-form.error input {
+    border-color: #e74c3c;
+  }
+  .control-form.error small {
+    visibility: visible;
+    color: #e74c3c;
+  }
+}
+
 // Footer main
 #footer-main {
   background-color: $secondary-color;
