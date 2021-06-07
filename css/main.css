@@ -112,12 +112,21 @@ ul {
 }
 
 #header-home #main-nav {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+#header-home #main-nav #logo {
+  position: absolute;
+  top: -47px;
+  left: -2px;
+  width: 115px;
+  height: 115px;
 }
 
 #header-home #main-nav .nav-links {
