@@ -6,6 +6,13 @@
   overflow: hidden;
 }
 
+.border-line {
+  width: 100px;
+  height: 10px;
+  background-color: #140024;
+  margin: 2rem auto;
+}
+
 .py-1 {
   padding: 1rem 0;
 }
@@ -206,6 +213,12 @@ ul {
           flex: 70%;
 }
 
+#content .main-content .create-post {
+  width: 85%;
+  height: 200px;
+  background-color: #fff;
+}
+
 #content .main-content .article .article-content {
   color: #fff;
   font-size: 0.9rem;
@@ -270,13 +283,6 @@ ul {
 #contact-section h2 {
   text-align: center;
   color: #fff;
-}
-
-#contact-section .border-line {
-  width: 100px;
-  height: 10px;
-  background-color: #140024;
-  margin: 2rem auto;
 }
 
 #contact-section .contact-form {
@@ -402,13 +408,6 @@ ul {
   color: #fff;
 }
 
-#register-section .border-line {
-  width: 100px;
-  height: 10px;
-  background-color: #140024;
-  margin: 2rem auto 1rem auto;
-}
-
 #register-section .control-form.success input {
   border-color: #2ecc71;
 }
@@ -430,6 +429,44 @@ ul {
 #register-section .control-form.error small {
   visibility: visible;
   color: #e74c3c;
+}
+
+#create-post {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 5rem 0 1rem 0;
+}
+
+#create-post .create-post-select-menu {
+  position: relative;
+  margin-top: 4rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#create-post .create-post-select-menu .active {
+  color: #2ecc71;
+}
+
+#create-post .create-post-select-menu i,
+#create-post .create-post-select-menu a {
+  color: #9f2f2f;
+  text-decoration: none;
+  display: block;
+}
+
+#create-post span {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+#create-post h2,
+#create-post p {
+  color: #fff;
 }
 
 #footer-main {

@@ -87,6 +87,11 @@ ul {
   // Main content
   .main-content {
     flex: 70%;
+    .create-post {
+      width: 85%;
+      height: 200px;
+      background-color: #fff;
+    }
     .article {
       .article-content {
         color: #fff;
@@ -147,12 +152,7 @@ ul {
     text-align: center;
     color: #fff;
   }
-  .border-line {
-    width: 100px;
-    height: 10px;
-    background-color: $special-color;
-    margin: 2rem auto;
-  }
+
   .contact-form {
     max-width: 600px;
     margin: auto;
@@ -255,29 +255,54 @@ ul {
     text-align: center;
     color: #fff;
   }
-  .border-line {
-    width: 100px;
-    height: 10px;
-    background-color: $special-color;
-    margin: 2rem auto 1rem auto;
-  }
   .control-form.success input {
-    border-color: #2ecc71;
+    border-color: $active-color;
   }
   .control-form.success i.fa-check-circle {
     visibility: visible;
-    color: #2ecc71;
+    color: $active-color;
   }
   .control-form.error i.fa-exclamation-circle {
     visibility: visible;
-    color: #e74c3c;
+    color: $error-color;
   }
   .control-form.error input {
-    border-color: #e74c3c;
+    border-color: $error-color;
   }
   .control-form.error small {
     visibility: visible;
-    color: #e74c3c;
+    color: $error-color;
+  }
+}
+
+#create-post {
+  flex: 1;
+  padding: 5rem 0 1rem 0;
+  .create-post-select-menu {
+    position: relative;
+    margin-top: 4rem;
+    justify-content: space-around;
+    display: flex;
+
+    .active {
+      color: $active-color;
+    }
+
+    i,
+    a {
+      color: $secondary-color;
+      text-decoration: none;
+      display: block;
+    }
+  }
+  span {
+    color: #fff;
+    font-size: 1.1rem;
+  }
+
+  h2,
+  p {
+    color: #fff;
   }
 }
 

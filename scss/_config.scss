@@ -6,6 +6,13 @@
   overflow: hidden;
 }
 
+.border-line {
+  width: 100px;
+  height: 10px;
+  background-color: $special-color;
+  margin: 2rem auto;
+}
+
 @for $i from 1 through 10 {
   .py {
     &-#{$i} {
