@@ -91,16 +91,20 @@
   padding: 0;
 }
 
-html {
-  position: relative;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   background-color: #262626;
   line-height: 1.6;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 ul {
@@ -256,11 +260,74 @@ ul {
   height: 1000px;
 }
 
+#contact-section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 5rem 0 1rem 0;
+}
+
+#contact-section h1 {
+  text-align: center;
+  color: #fff;
+}
+
+#contact-section .contact-border-line {
+  width: 100px;
+  height: 10px;
+  background-color: #140024;
+  margin: 3rem auto;
+}
+
+#contact-section .contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 0.6rem;
+  overflow: hidden;
+}
+
+#contact-section .contact-form .contact-form-text {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 1rem 0;
+  border: none;
+  background: #111;
+  padding: 1.5rem 3rem;
+  outline: none;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#contact-section .contact-form .contact-form-text:focus {
+  -webkit-box-shadow: 0 0 0.6rem 0.2rem #140024;
+          box-shadow: 0 0 0.6rem 0.2rem #140024;
+}
+
+#contact-section .contact-form textarea.contact-form-text {
+  resize: none;
+  height: 200px;
+}
+
+#contact-section .contact-form .contact-form-btn {
+  float: right;
+  border: 0;
+  background-color: #140024;
+  color: #fff;
+  padding: 0.8rem 3.5rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#contact-section .contact-form .contact-form-btn:hover {
+  background-color: #4d008a;
+}
+
 #footer-main {
-  position: absolute;
-  bottom: -30px;
-  right: 0;
-  left: 0;
   background-color: #9f2f2f;
 }
 
@@ -277,7 +344,7 @@ ul {
 }
 
 #footer-main .container ul li {
-  padding: 0.3rem 0.7rem;
+  padding: 0.2rem 0.7rem;
 }
 
 #footer-main .container ul li a,
