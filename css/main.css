@@ -91,6 +91,10 @@
   padding: 0;
 }
 
+html {
+  position: relative;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #262626;
@@ -250,5 +254,40 @@ ul {
 #content .sidebar-content img {
   width: 100%;
   height: 1000px;
+}
+
+#footer-main {
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  left: 0;
+  background-color: #9f2f2f;
+}
+
+#footer-main .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer-main .container ul li {
+  padding: 0.3rem 0.7rem;
+}
+
+#footer-main .container ul li a,
+#footer-main .container ul li span {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+#footer-main .container ul li a:hover {
+  color: #a6a6a6;
 }
 /*# sourceMappingURL=main.css.map */
