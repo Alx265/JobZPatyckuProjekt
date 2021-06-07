@@ -132,7 +132,7 @@ ul {
           align-items: center;
 }
 
-#header-home #main-nav .nav-links span {
+#header-home #main-nav .nav-links .special-color {
   background-color: #140024;
   padding: 0.5rem;
   border-radius: 10px;
@@ -148,14 +148,12 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
-  border-bottom: 2px transparent solid;
-  padding-bottom: 0.5rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 #header-home #main-nav .nav-links li a:hover {
-  border-color: orange;
+  color: #a6a6a6;
 }
 
 #content {
@@ -192,7 +190,6 @@ ul {
 }
 
 #content .main-content .article .article-content {
-  position: relative;
   color: #fff;
   font-size: 0.9rem;
   text-align: left;
@@ -204,7 +201,10 @@ ul {
   display: flex;
   background-color: #383838;
   max-width: 85%;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: left;
   margin-bottom: 0.5rem;
 }
@@ -212,6 +212,8 @@ ul {
 #content .main-content .article .article-content .article-title img {
   padding: 0;
   margin: 0 1rem;
+  height: 40px;
+  width: 40px;
 }
 
 #content .main-content .article .article-content .article-details {
@@ -219,8 +221,9 @@ ul {
   color: #bfbfbf;
 }
 
-#content .main-content .article .article-content .article-actions {
-  position: absolute;
+#content .main-content .article .article-content .article-details .article-category .article-category-details {
+  font-size: 0.8rem;
+  color: white;
 }
 
 #content .main-content .article .article-content img {
