@@ -18,7 +18,7 @@ function checkInputs() {
 	const password2Value = password2.value.trim();
 
 	if(usernameValue === '') {
-		setError(username,'Pole ogin jest wymagane');
+		setError(username,'Pole login jest wymagane');
 	} else {
 		setSuccess(username)
 	}
@@ -42,7 +42,7 @@ function checkInputs() {
 	} else if(passwordValue !== password2Value) {
 		setError(password2,'Hasła się nie zgadzają')
 	} else {
-
+		setSuccess(password2);
 	}
 }
 
@@ -61,5 +61,6 @@ function setSuccess(input){
 }
 
 function isEmail(email) {
-	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+	const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	return re.test(String(email).toLowerCase());
 }
