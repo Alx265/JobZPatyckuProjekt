@@ -97,7 +97,6 @@ ul {
         color: #fff;
         font-size: 0.9rem;
         text-align: left;
-
         .article-title {
           display: flex;
           background-color: lighten($main-color, 7%);
@@ -106,15 +105,14 @@ ul {
           align-items: center;
           text-align: left;
           margin-bottom: 0.5rem;
-
-          img {
+          .article-avatar {
             padding: 0;
             margin: 0 1rem;
             height: 40px;
             width: 40px;
+            background-color: $secondary-color;
           }
         }
-
         .article-details {
           max-width: 85%;
           color: lighten($main-color, 60%);
@@ -125,8 +123,7 @@ ul {
             }
           }
         }
-
-        img {
+        .article-image {
           margin: 1rem 0;
           max-width: 85%;
           background-color: $secondary-color;

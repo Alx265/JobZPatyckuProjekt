@@ -5,6 +5,7 @@ const password = document.querySelector('#user-password');
 const password2 = document.querySelector('#user-password2');
 
 
+
 form.addEventListener('submit',(e) => {
 	e.preventDefault();
 

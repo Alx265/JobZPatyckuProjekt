@@ -239,11 +239,12 @@ ul {
   margin-bottom: 0.5rem;
 }
 
-#content .main-content .article .article-content .article-title img {
+#content .main-content .article .article-content .article-title .article-avatar {
   padding: 0;
   margin: 0 1rem;
   height: 40px;
   width: 40px;
+  background-color: #9f2f2f;
 }
 
 #content .main-content .article .article-content .article-details {
@@ -256,7 +257,7 @@ ul {
   color: white;
 }
 
-#content .main-content .article .article-content img {
+#content .main-content .article .article-content .article-image {
   margin: 1rem 0;
   max-width: 85%;
   background-color: #9f2f2f;
