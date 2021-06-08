@@ -366,13 +366,13 @@ ul {
   left: 10px;
 }
 
-#register-section .register-form .control-form input {
+#register-section .register-form .control-form .register-form-text {
   display: block;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 3rem 0;
-  border: 1px solid;
+  margin: 1rem 0;
+  border: none;
   border-radius: 0.6rem;
   background: #111;
   padding: 1.5rem 3rem;
@@ -380,6 +380,8 @@ ul {
   color: #fff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  border: 1px solid;
+  margin-top: 3rem;
 }
 
 #register-section .register-form .control-form .register-form-text:focus {
@@ -397,6 +399,7 @@ ul {
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  margin-top: 2rem;
 }
 
 #register-section .register-form .register-form-btn:hover {
@@ -408,7 +411,7 @@ ul {
   color: #fff;
 }
 
-#register-section .control-form.success input {
+#register-section .control-form.success input.register-form-text {
   border-color: #2ecc71;
 }
 
@@ -422,7 +425,7 @@ ul {
   color: #e74c3c;
 }
 
-#register-section .control-form.error input {
+#register-section .control-form.error input.register-form-text {
   border-color: #e74c3c;
 }
 
@@ -452,7 +455,7 @@ ul {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 3rem 0;
+  margin: 1rem 0;
   border: none;
   border-radius: 0.6rem;
   background: #111;
@@ -461,15 +464,15 @@ ul {
   color: #fff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  margin-top: 3rem;
 }
 
-#create-post .create-post-picture select {
+#create-post .create-post-picture .create-post-select {
   display: block;
-  cursor: pointer;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 3rem 0;
+  margin: 1rem 0;
   border: none;
   border-radius: 0.6rem;
   background: #111;
@@ -478,6 +481,8 @@ ul {
   color: #fff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  margin-top: 3rem;
+  cursor: pointer;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -498,7 +503,7 @@ ul {
 
 #create-post .create-post-picture .custom-file-upload {
   display: block;
-  margin-top: 2rem;
+  margin-top: 3rem;
   padding-top: 3rem;
   height: 76px;
   width: 100%;
@@ -511,7 +516,6 @@ ul {
 
 #create-post .create-post-picture .create-post-btn {
   float: right;
-  margin-top: 1rem;
   border: 0;
   background-color: #140024;
   color: #fff;
@@ -520,6 +524,7 @@ ul {
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  margin-top: 1rem;
 }
 
 #create-post .create-post-picture .create-post-btn:hover {

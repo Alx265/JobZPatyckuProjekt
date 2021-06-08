@@ -1,5 +1,5 @@
 @import "variables";
-@import "config";
+@import "utilities";
 
 * {
   margin: 0;
@@ -159,17 +159,7 @@ ul {
     padding: 0 0.6rem;
     overflow: hidden;
     .contact-form-text {
-      display: block;
-      width: 100%;
-      box-sizing: border-box;
-      margin: 1rem 0;
-      border: none;
-      border-radius: 0.6rem;
-      background: #111;
-      padding: 1.5rem 3rem;
-      outline: none;
-      color: #fff;
-      transition: 0.5s;
+      @include contact-form-text;
     }
     .contact-form-text:focus {
       box-shadow: 0 0 0.6rem 0.2rem $special-color;
@@ -179,14 +169,7 @@ ul {
       height: 200px;
     }
     .contact-form-btn {
-      float: right;
-      border: 0;
-      background-color: $special-color;
-      color: #fff;
-      padding: 0.8rem 3.5rem;
-      border-radius: 1.5rem;
-      cursor: pointer;
-      transition: 0.5s;
+      @include contact-form-btn;
     }
     .contact-form-btn:hover {
       background-color: lighten($special-color, 20%);
@@ -218,18 +201,10 @@ ul {
         bottom: -25px;
         left: 10px;
       }
-      input {
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-        margin: 3rem 0;
+      .register-form-text {
+        @include register-form-text;
         border: 1px solid;
-        border-radius: 0.6rem;
-        background: #111;
-        padding: 1.5rem 3rem;
-        outline: none;
-        color: #fff;
-        transition: 0.5s;
+        margin-top: 3rem;
       }
 
       .register-form-text:focus {
@@ -238,14 +213,8 @@ ul {
     }
 
     .register-form-btn {
-      float: right;
-      border: 0;
-      background-color: $special-color;
-      color: #fff;
-      padding: 0.8rem 3.5rem;
-      border-radius: 1.5rem;
-      cursor: pointer;
-      transition: 0.5s;
+      @include register-form-btn;
+      margin-top: 2rem;
     }
     .register-form-btn:hover {
       background-color: lighten($special-color, 20%);
@@ -255,7 +224,7 @@ ul {
     text-align: center;
     color: #fff;
   }
-  .control-form.success input {
+  .control-form.success input.register-form-text {
     border-color: $active-color;
   }
   .control-form.success i.fa-check-circle {
@@ -266,7 +235,7 @@ ul {
     visibility: visible;
     color: $error-color;
   }
-  .control-form.error input {
+  .control-form.error input.register-form-text {
     border-color: $error-color;
   }
   .control-form.error small {
@@ -289,31 +258,13 @@ ul {
     padding: 0 0.6rem;
     overflow: hidden;
     .create-post-title {
-      display: block;
-      width: 100%;
-      box-sizing: border-box;
-      margin: 3rem 0;
-      border: none;
-      border-radius: 0.6rem;
-      background: #111;
-      padding: 1.5rem 3rem;
-      outline: none;
-      color: #fff;
-      transition: 0.5s;
+      @include create-post-title;
+      margin-top: 3rem;
     }
-    select {
-      display: block;
+    .create-post-select {
+      @include create-post-select;
+      margin-top: 3rem;
       cursor: pointer;
-      width: 100%;
-      box-sizing: border-box;
-      margin: 3rem 0;
-      border: none;
-      border-radius: 0.6rem;
-      background: #111;
-      padding: 1.5rem 3rem;
-      outline: none;
-      color: #fff;
-      transition: 0.5s;
       appearance: none;
       background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='40' viewBox='0 0 24 24' width='40' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
       background-repeat: no-repeat;
@@ -329,7 +280,7 @@ ul {
     }
     .custom-file-upload {
       display: block;
-      margin-top: 2rem;
+      margin-top: 3rem;
       padding-top: 3rem;
       height: 76px;
       width: 100%;
@@ -340,15 +291,8 @@ ul {
       cursor: pointer;
     }
     .create-post-btn {
-      float: right;
+      @include create-post-btn;
       margin-top: 1rem;
-      border: 0;
-      background-color: $special-color;
-      color: #fff;
-      padding: 0.8rem 3.5rem;
-      border-radius: 1.5rem;
-      cursor: pointer;
-      transition: 0.5s;
     }
     .create-post-btn:hover {
       background-color: lighten($special-color, 20%);
