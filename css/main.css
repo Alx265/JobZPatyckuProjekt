@@ -230,7 +230,7 @@ ul {
   display: -ms-flexbox;
   display: flex;
   background-color: #383838;
-  max-width: 85%;
+  width: 85%;
   padding: 0.5rem 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -248,7 +248,7 @@ ul {
 }
 
 #content .main-content .article .article-content .article-details {
-  max-width: 85%;
+  width: 85%;
   color: #bfbfbf;
 }
 
