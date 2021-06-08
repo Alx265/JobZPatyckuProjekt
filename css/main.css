@@ -259,7 +259,7 @@ ul {
 
 #content .main-content .article .article-content .article-image {
   margin: 1rem 0;
-  max-width: 85%;
+  width: 85%;
   background-color: #9f2f2f;
 }
 
