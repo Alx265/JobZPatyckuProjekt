@@ -50,7 +50,7 @@
         </nav>
       </div>
     </header>
-    <!-- Create post video form -->
+    <!-- Create post picture form -->
     <section id="create-post">
       <div class="container">
         <h2>Dodaj swojego posta już teraz !</h2>
@@ -59,14 +59,60 @@
 
         <div class="create-post-select-menu">
           <a href="picture.html"
-            ><i class="far fa-image fa-7x"></i><span>Obrazek</span></a
+            ><i class="far fa-image fa-7x"></i
+            ><span class="un-active">Obrazek</span></a
           >
 
-          <a href="movie.html"
+          <a href="video.html"
             ><i class="fas fa-video fa-7x active"></i
             ><span class="active">Filmik</span></a
           >
         </div>
+        <form class="create-post-video-form" id="create-post-video-form">
+          <div class="create-post-control">
+            <input
+              class="create-post-title"
+              type="text"
+              name="title"
+              id="title"
+              placeholder="Tytuł twojego filmiku"
+              autocomplete="off"
+            />
+            <small>Error message</small>
+          </div>
+          <div class="create-post-control">
+            <select name="category" id="category" class="create-post-select">
+              <option value="" disabled selected>Wybierz kategorie</option>
+              <option value="Ciekawostki">Ciekawostki</option>
+              <option value="Gry">Gry</option>
+              <option value="Sport">Sport</option>
+              <option value="Filmy">Filmy</option>
+              <option value="Zwierzęta">Zwierzęta</option>
+              <option value="Humor">Humor</option>
+              <option value="Polityka">Polityka</option>
+              <option value="Muzyka">Muzyka</option>
+              <option value="Czarny humor">Czarny humor</option>
+              <option value="Pasty">Pasty</option>
+              <option value="Nauka">Nauka</option>
+              <option value="Pytanie">Pytanie</option>
+              <option value="Motoryzacja">Motoryzacja</option>
+            </select>
+            <small>Error message</small>
+          </div>
+          <div class="create-post-control">
+            <label class="custom-file-upload">
+              <input
+                type="file"
+                id="file-image-1"
+                accept="video/*"
+                onchange="showPreview(event);"
+              />
+              <i class="fa fa-cloud-upload"></i>&nbsp; Kliknij tutaj aby dodać
+              filmik
+            </label>
+          </div>
+          <input type="submit" value="Wyślij" class="create-post-btn" />
+        </form>
       </div>
     </section>
     <!-- Footer -->
@@ -80,7 +126,7 @@
       </div>
     </footer>
 
-    <script src="/js/main.js"></script>
+    <script src="/js/create-movie.js"></script>
     <script
       src="https://kit.fontawesome.com/7e577ef14f.js"
       crossorigin="anonymous"
