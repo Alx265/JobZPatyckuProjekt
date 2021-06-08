@@ -41,14 +41,16 @@
             <li><a href="#">Logowanie</a></li>
             <li>
               <a href="register.html"
-                ><span class="special-color">Rejestracja</span></a
+                ><span class="special-color"
+                  ><i class="fas fa-user-plus"></i> Rejestracja</span
+                ></a
               >
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <!-- Create post form -->
+    <!-- Create post picture form -->
     <section id="create-post">
       <div class="container">
         <h2>Dodaj swojego posta już teraz !</h2>
@@ -65,8 +67,46 @@
             ><i class="fas fa-video fa-7x"></i><span>Filmik</span></a
           >
         </div>
+        <form class="create-post-picture" id="create-post-picture">
+          <div class="create-post-control">
+            <input
+              class="create-post-title"
+              type="text"
+              name="title"
+              id="title"
+              placeholder="Tytuł twojego obrazka"
+            />
+          </div>
+          <div class="create-post-control">
+            <select name="category" id="category">
+              <option value="" disabled selected>Wybierz kategorie</option>
+              <option value="Ciekawostki">Ciekawostki</option>
+              <option value="Gry">Gry</option>
+              <option value="Sport">Sport</option>
+              <option value="Filmy">Filmy</option>
+              <option value="Zwierzęta">Zwierzęta</option>
+              <option value="Humor">Humor</option>
+              <option value="Polityka">Polityka</option>
+              <option value="Muzyka">Muzyka</option>
+              <option value="Czarny humor">Czarny humor</option>
+              <option value="Pasty">Pasty</option>
+              <option value="Nauka">Nauka</option>
+              <option value="Pytanie">Pytanie</option>
+              <option value="Motoryzacja">Motoryzacja</option>
+            </select>
+          </div>
+          <div class="create-post-control">
+            <label class="custom-file-upload">
+              <input type="file" />
+              <i class="fa fa-cloud-upload"></i>&nbsp; Kliknij lub przeciągnij
+              zdjęcie tutaj
+            </label>
+          </div>
+          <input type="submit" value="Wyślij" class="create-post-btn" />
+        </form>
       </div>
     </section>
+    <!-- Footer -->
     <footer id="footer-main">
       <div class="container">
         <ul>

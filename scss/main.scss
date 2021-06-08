@@ -275,19 +275,93 @@ ul {
   }
 }
 
+// Create post form
+
 #create-post {
   flex: 1;
   padding: 5rem 0 1rem 0;
+
+  .create-post-picture {
+    max-width: 600px;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 0.6rem;
+    overflow: hidden;
+    .create-post-title {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      margin: 3rem 0;
+      border: none;
+      border-radius: 0.6rem;
+      background: #111;
+      padding: 1.5rem 3rem;
+      outline: none;
+      color: #fff;
+      transition: 0.5s;
+    }
+    select {
+      display: block;
+      cursor: pointer;
+      width: 100%;
+      box-sizing: border-box;
+      margin: 3rem 0;
+      border: none;
+      border-radius: 0.6rem;
+      background: #111;
+      padding: 1.5rem 3rem;
+      outline: none;
+      color: #fff;
+      transition: 0.5s;
+      appearance: none;
+      background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='40' viewBox='0 0 24 24' width='40' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+      background-repeat: no-repeat;
+      background-position-x: 100%;
+      background-position-y: 13px;
+    }
+    .create-post-title:focus {
+      box-shadow: 0 0 0.8rem 0.2rem $special-color;
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+    .custom-file-upload {
+      display: block;
+      margin-top: 2rem;
+      padding-top: 3rem;
+      height: 76px;
+      width: 100%;
+      border: none;
+      border-radius: 0.6rem;
+      background: #111;
+      color: #fff;
+      cursor: pointer;
+    }
+    .create-post-btn {
+      float: right;
+      margin-top: 1rem;
+      border: 0;
+      background-color: $special-color;
+      color: #fff;
+      padding: 0.8rem 3.5rem;
+      border-radius: 1.5rem;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+    .create-post-btn:hover {
+      background-color: lighten($special-color, 20%);
+    }
+  }
+
   .create-post-select-menu {
-    position: relative;
     margin-top: 4rem;
     justify-content: space-around;
     display: flex;
-
     .active {
       color: $active-color;
     }
-
     i,
     a {
       color: $secondary-color;
