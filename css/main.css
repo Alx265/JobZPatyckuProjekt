@@ -287,9 +287,11 @@ ul {
 }
 
 #contact-section .contact-form {
+  background-color: #2b2b2b;
+  border-radius: 15px;
+  padding: 2rem 2rem;
   max-width: 600px;
   margin: auto;
-  padding: 0 0.6rem;
   overflow: hidden;
 }
 
@@ -343,9 +345,11 @@ ul {
 }
 
 #register-section .register-form {
+  background-color: #2b2b2b;
+  border-radius: 15px;
+  padding: 2rem 2rem;
   max-width: 600px;
   margin: auto;
-  padding: 0 0.6rem;
   overflow: hidden;
 }
 
@@ -435,6 +439,128 @@ ul {
   color: #e74c3c;
 }
 
+#login-section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 5rem 0 1rem 0;
+}
+
+#login-section .login-form {
+  background-color: #2b2b2b;
+  border-radius: 15px;
+  padding: 2rem 2rem;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+#login-section .login-form .control-form {
+  position: relative;
+}
+
+#login-section .login-form .control-form i {
+  visibility: hidden;
+  position: absolute;
+  top: 25px;
+  right: 10px;
+}
+
+#login-section .login-form .control-form small {
+  visibility: hidden;
+  position: absolute;
+  bottom: -25px;
+  left: 10px;
+}
+
+#login-section .login-form .control-form .login-form-text {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 1rem 0;
+  border: 1px solid;
+  border-radius: 0.6rem;
+  background: #111;
+  padding: 1.5rem 3rem;
+  outline: none;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 1px solid;
+  margin-top: 3rem;
+}
+
+#login-section .login-form .control-form .login-form-text:focus {
+  -webkit-box-shadow: 0 0 0.8rem 0.2rem #140024;
+          box-shadow: 0 0 0.8rem 0.2rem #140024;
+}
+
+#login-section .login-form .login-form-btn {
+  float: right;
+  border: 0;
+  background-color: #140024;
+  color: #fff;
+  padding: 0.8rem 3.5rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#login-section .login-form .login-form-btn:hover {
+  background-color: #4d008a;
+}
+
+#login-section h2 {
+  text-align: center;
+  color: #fff;
+}
+
+#login-section a {
+  text-decoration: none;
+  color: #c53c3c;
+  display: block;
+  text-align: left;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+#login-section a.my-top {
+  margin-top: 2.5rem;
+}
+
+#login-section a:first-child {
+  margin-top: 2rem;
+}
+
+#login-section a:hover {
+  color: #e8b2b2;
+}
+
+#login-section .control-form.success input.login-form-text {
+  border-color: #2ecc71;
+}
+
+#login-section .control-form.success i.fa-check-circle {
+  visibility: visible;
+  color: #2ecc71;
+}
+
+#login-section .control-form.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: #e74c3c;
+}
+
+#login-section .control-form.error input.login-form-text {
+  border-color: #e74c3c;
+}
+
+#login-section .control-form.error small {
+  visibility: visible;
+  color: #e74c3c;
+}
+
 #create-post {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -443,12 +569,14 @@ ul {
 }
 
 #create-post .create-post-picture-form {
+  background-color: #2b2b2b;
+  border-radius: 15px;
   width: 60%;
   position: relative;
   margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 0.6rem;
+  padding: 1rem 1rem;
   overflow: hidden;
 }
 
@@ -605,12 +733,14 @@ ul {
 }
 
 #create-post .create-post-video-form {
+  background-color: #2b2b2b;
+  border-radius: 15px;
+  padding: 1rem 1rem;
   width: 60%;
   position: relative;
   margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 0.6rem;
   overflow: hidden;
 }
 

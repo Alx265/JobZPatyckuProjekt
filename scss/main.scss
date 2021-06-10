@@ -151,9 +151,11 @@ ul {
   }
 
   .contact-form {
+    background-color: lighten($main-color, 2%);
+    border-radius: 15px;
+    padding: 2rem 2rem;
     max-width: 600px;
     margin: auto;
-    padding: 0 0.6rem;
     overflow: hidden;
     .contact-form-text {
       @include contact-form-text;
@@ -179,9 +181,11 @@ ul {
   flex: 1;
   padding: 5rem 0 1rem 0;
   .register-form {
+    background-color: lighten($main-color, 2%);
+    border-radius: 15px;
+    padding: 2rem 2rem;
     max-width: 600px;
     margin: auto;
-    padding: 0 0.6rem;
     overflow: hidden;
     .control-form {
       position: relative;
@@ -238,6 +242,90 @@ ul {
   }
 }
 
+// Login section
+#login-section {
+  flex: 1;
+  padding: 5rem 0 1rem 0;
+
+  .login-form {
+    background-color: lighten($main-color, 2%);
+    border-radius: 15px;
+    padding: 2rem 2rem;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    .control-form {
+      position: relative;
+      i {
+        visibility: hidden;
+        position: absolute;
+        top: 25px;
+        right: 10px;
+      }
+
+      small {
+        @include small-text;
+      }
+      .login-form-text {
+        @include login-form-text;
+        border: 1px solid;
+        margin-top: 3rem;
+      }
+
+      .login-form-text:focus {
+        box-shadow: 0 0 0.8rem 0.2rem $special-color;
+      }
+    }
+
+    .login-form-btn {
+      @include login-form-btn;
+    }
+    .login-form-btn:hover {
+      background-color: lighten($special-color, 20%);
+    }
+  }
+  h2 {
+    text-align: center;
+    color: #fff;
+  }
+
+  a {
+    text-decoration: none;
+    color: lighten($secondary-color, 10%);
+    display: block;
+    text-align: left;
+    transition: all 0.7s;
+  }
+  a.my-top {
+    margin-top: 2.5rem;
+  }
+  a:first-child {
+    margin-top: 2rem;
+  }
+  a:hover {
+    color: lighten($secondary-color, 40%);
+  }
+
+  .control-form.success input.login-form-text {
+    border-color: $active-color;
+  }
+  .control-form.success i.fa-check-circle {
+    visibility: visible;
+    color: $active-color;
+  }
+  .control-form.error i.fa-exclamation-circle {
+    visibility: visible;
+    color: $error-color;
+  }
+  .control-form.error input.login-form-text {
+    border-color: $error-color;
+  }
+  .control-form.error small {
+    visibility: visible;
+    color: $error-color;
+  }
+}
+
 // Create post form
 #create-post {
   flex: 1;
@@ -245,12 +333,14 @@ ul {
 
   // Create post picture
   .create-post-picture-form {
+    background-color: lighten($main-color, 2%);
+    border-radius: 15px;
     width: 60%;
     position: relative;
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 0.6rem;
+    padding: 1rem 1rem;
     overflow: hidden;
     .create-post-control {
       small {
@@ -349,12 +439,14 @@ ul {
   // Create post movie
 
   .create-post-video-form {
+    background-color: lighten($main-color, 2%);
+    border-radius: 15px;
+    padding: 1rem 1rem;
     width: 60%;
     position: relative;
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 0.6rem;
     overflow: hidden;
     .create-post-control {
       small {

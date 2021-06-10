@@ -50,72 +50,46 @@
         </nav>
       </div>
     </header>
-    <!-- Create post picture form -->
-    <section id="create-post">
+    <!-- Register form -->
+    <section id="login-section">
       <div class="container">
-        <h2>Dodaj swojego posta już teraz !</h2>
+        <h2>Logowanie</h2>
         <div class="border-line"></div>
-        <span>Wybierz co zamierzasz wrzucić</span>
-
-        <div class="create-post-select-menu">
-          <a href="picture.html"
-            ><i class="far fa-image fa-7x"></i
-            ><span class="un-active">Obrazek</span></a
-          >
-
-          <a href="video.html"
-            ><i class="fas fa-video fa-7x active"></i
-            ><span class="active">Filmik</span></a
-          >
-        </div>
-        <form class="create-post-video-form" id="create-post-video-form">
-          <div class="create-post-control">
+        <form method="post" class="login-form" id="login-form">
+          <div class="control-form">
             <input
-              class="create-post-title"
               type="text"
-              name="title"
-              id="title"
-              placeholder="Tytuł twojego filmiku"
+              name="user-login"
+              id="user-login"
+              placeholder="Podaj login"
+              class="login-form-text"
               autocomplete="off"
             />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
             <small>Error message</small>
           </div>
-          <div class="create-post-control">
-            <select name="category" id="category" class="create-post-select">
-              <option value="" disabled selected>Wybierz kategorie</option>
-              <option value="Ciekawostki">Ciekawostki</option>
-              <option value="Gry">Gry</option>
-              <option value="Sport">Sport</option>
-              <option value="Filmy">Filmy</option>
-              <option value="Zwierzęta">Zwierzęta</option>
-              <option value="Humor">Humor</option>
-              <option value="Polityka">Polityka</option>
-              <option value="Muzyka">Muzyka</option>
-              <option value="Czarny humor">Czarny humor</option>
-              <option value="Pasty">Pasty</option>
-              <option value="Nauka">Nauka</option>
-              <option value="Pytanie">Pytanie</option>
-              <option value="Motoryzacja">Motoryzacja</option>
-            </select>
+          <div class="control-form">
+            <input
+              type="password"
+              name="user-password"
+              id="user-password"
+              placeholder="Podaj hasło"
+              class="login-form-text"
+              autocomplete="off"
+            />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
             <small>Error message</small>
           </div>
-          <div class="create-post-control">
-            <label class="custom-file-upload">
-              <input
-                type="file"
-                id="file-image-1"
-                accept="video/*"
-                onchange="showPreview(event);"
-              />
-              <i class="fa fa-cloud-upload"></i>&nbsp; Kliknij tutaj aby dodać
-              filmik
-            </label>
-          </div>
-          <input type="submit" value="Wyślij" class="create-post-btn" />
+          <a href="#" class="my-top">Nie pamiętasz hasła?</a>
+          <a href="register.html">Nie masz jeszcze konta?</a>
+          <input type="submit" value="Zaloguj" class="login-form-btn" />
         </form>
       </div>
     </section>
-    <!-- Footer -->
+
+    <!-- Footer content -->
     <footer id="footer-main">
       <div class="container">
         <ul>
@@ -126,7 +100,7 @@
       </div>
     </footer>
 
-    <script src="/js/create-movie.js"></script>
+    <script src="/js/login.js"></script>
     <script
       src="https://kit.fontawesome.com/7e577ef14f.js"
       crossorigin="anonymous"

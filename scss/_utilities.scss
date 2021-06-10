@@ -45,6 +45,13 @@
   @include input-style;
 }
 
+@mixin login-form-text {
+  @include input-style;
+}
+@mixin login-form-btn {
+  @include submit-style;
+}
+
 @mixin register-form-text {
   @include input-style;
 }
