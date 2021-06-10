@@ -192,7 +192,7 @@ ul {
 #content .breadcrumbs .breadcrumbs-item {
   position: absolute;
   top: 4rem;
-  left: 25%;
+  left: 21.5%;
 }
 
 #content .breadcrumbs .breadcrumbs-item .breadcrumbs-link {
@@ -248,8 +248,10 @@ ul {
 }
 
 #content .main-content .article .article-content .article-details {
-  width: 85%;
+  width: calc(85% - 16px);
   color: #bfbfbf;
+  background-color: #2b2b2b;
+  padding-left: 1rem;
 }
 
 #content .main-content .article .article-content .article-details .article-category .article-category-details {
@@ -261,6 +263,33 @@ ul {
   margin: 1rem 0;
   width: 85%;
   background-color: #9f2f2f;
+}
+
+#content .main-content .article .article-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  text-align: left;
+  padding: 0.5rem 0 0.5rem 1rem;
+  margin-bottom: 2rem;
+  width: calc(85% - 16px);
+  background-color: #303030;
+}
+
+#content .main-content .article .article-actions .article-actions-plus-votes {
+  margin-left: 1rem;
+}
+
+#content .main-content .article .article-actions .article-actions-plus {
+  color: #bfbfbf;
+  padding: 0.4rem 0.4rem;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background: #9f2f2f;
 }
 
 #content .sidebar-content {

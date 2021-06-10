@@ -72,7 +72,7 @@ ul {
     .breadcrumbs-item {
       position: absolute;
       top: 4rem;
-      left: 25%;
+      left: 21.5%;
       .breadcrumbs-link {
         color: lighten($main-color, 60%);
         text-decoration: none;
@@ -114,8 +114,10 @@ ul {
           }
         }
         .article-details {
-          width: 85%;
+          width: calc(85% - 16px);
           color: lighten($main-color, 60%);
+          background-color: lighten($main-color, 2%);
+          padding-left: 1rem;
           .article-category {
             .article-category-details {
               font-size: 0.8rem;
@@ -127,6 +129,27 @@ ul {
           margin: 1rem 0;
           width: 85%;
           background-color: $secondary-color;
+        }
+      }
+
+      .article-actions {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        text-align: left;
+        padding: 0.5rem 0 0.5rem 1rem;
+        margin-bottom: 2rem;
+        width: calc(85% - 16px);
+        background-color: lighten($main-color, 4%);
+        .article-actions-plus-votes {
+          margin-left: 1rem;
+        }
+        .article-actions-plus {
+          color: lighten($main-color, 60%);
+          padding: 0.4rem 0.4rem;
+          border: 1px solid transparent;
+          border-radius: 5px;
+          background: $secondary-color;
         }
       }
     }
