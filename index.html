@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Strona z obrazkami i filmikami" />
+    <meta name="author" content="Marcin Wawreczko, Adrian Treściński" />
+    <meta
+      name="keywords"
+      content="JobZpatycku, memy, posty, filmiki, movies, images"
+    />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -58,8 +64,11 @@
           <article class="article">
             <div class="article-content">
               <h2 class="article-title">
-                <img src="/img/avatar.png" class="article-avatar" />Tutaj jest
-                jakis tytul
+                <img
+                  src="/img/avatar.png"
+                  class="article-avatar"
+                  alt="article-avatar"
+                />Tutaj jest jakis tytul
               </h2>
               <div class="article-details">
                 <div class="article-add-time">
@@ -70,7 +79,34 @@
                 </div>
               </div>
               <img src=https://source.unsplash.com/user/erondu/daily
-              class="article-image"/>
+              class="article-image" alt="article-image"/>
+            </div>
+            <div class="article-actions">
+              <button type="button" class="article-actions-plus">
+                <i class="fas fa-plus fa-2x"></i>
+              </button>
+              <span class="article-actions-plus-votes">+2901</span>
+            </div>
+          </article>
+          <article class="article">
+            <div class="article-content">
+              <h2 class="article-title">
+                <img
+                  src="/img/avatar.png"
+                  class="article-avatar"
+                  alt="article-avatar"
+                />Tutaj jest jakis tytul
+              </h2>
+              <div class="article-details">
+                <div class="article-add-time">
+                  <span class="article-time"> 20 godzin temu </span>
+                </div>
+                <div class="article-category">
+                  <span class="article-category-details">Kategoria</span>
+                </div>
+              </div>
+              <img src=https://source.unsplash.com/user/erondu/daily
+              class="article-image" alt="article-image"/>
             </div>
             <div class="article-actions">
               <button type="button" class="article-actions-plus">
@@ -81,9 +117,28 @@
           </article>
         </main>
         <!-- Aside content -->
-        <aside class="sidebar-content">
-          <img src=https://source.unsplash.com/user/erondu/daily
-          class="article-image"/>
+        <aside id="sidebar-content">
+          <img src="/img/add.png" alt="Advertisement" class="add-image" />
+          <div class="profile">
+            <div class="profile-avatar">
+              <img
+                src="/img/logokrecik.svg"
+                alt="Avatar profile"
+                class="profile-avatar-img"
+              />
+            </div>
+            <div class="profile-info">
+              <ul class="profile-details">
+                <li class="profile-name"><i class="fas fa-user"></i> Alx</li>
+                <li class="profile-create-date">
+                  <i class="fas fa-calendar-alt"></i> 15.06.2021
+                </li>
+                <li class="profile-comments">
+                  <i class="fas fa-comments"></i> 210
+                </li>
+              </ul>
+            </div>
+          </div>
         </aside>
       </div>
     </section>
@@ -93,12 +148,16 @@
         <ul>
           <li><a href="contact.html">Kontakt</a></li>
           <li><a href="#">Polityka prywatności</a></li>
-          <li><span>Copyright &copy; 2021 Alx. All rights reserved.</span></li>
+          <li>
+            <span
+              >Copyright &copy; Frontend Marcin Wawreczko &nbsp;Backend Adrian
+              Treściński
+            </span>
+          </li>
         </ul>
       </div>
     </footer>
 
-    <script src="/js/main.js"></script>
     <script
       src="https://kit.fontawesome.com/7e577ef14f.js"
       crossorigin="anonymous"
