@@ -21,14 +21,15 @@ ul {
 }
 // Header
 #header-home {
+  .container {
+    overflow: visible;
+  }
   background: $secondary-color;
   position: sticky;
   width: 100%;
   top: 0;
   left: 0;
   color: #fff;
-  z-index: 1;
-
   #main-nav {
     position: relative;
     #logo {
@@ -46,7 +47,6 @@ ul {
         padding: 0.5rem;
         border-radius: 10px;
       }
-
       display: flex;
       justify-content: center;
       align-items: center;
@@ -61,6 +61,27 @@ ul {
         a:hover {
           color: lighten($main-color, 50%);
         }
+      }
+      .dropdown {
+        position: relative;
+        .dropdown-menu {
+          position: absolute;
+          background-color: $special-color;
+          width: 110px;
+          text-align: left;
+          padding-left: 1rem;
+          margin-top: 0.3rem;
+          border-radius: 5px;
+          display: none;
+          .dropdown-item {
+            color: #fff;
+            margin: 0;
+            padding: 0.2rem 0;
+          }
+        }
+      }
+      .dropdown a:focus + ul {
+        display: block;
       }
     }
   }

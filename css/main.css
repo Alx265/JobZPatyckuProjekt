@@ -126,7 +126,10 @@ ul {
   top: 0;
   left: 0;
   color: #fff;
-  z-index: 1;
+}
+
+#header-home .container {
+  overflow: visible;
 }
 
 #header-home #main-nav {
@@ -181,6 +184,31 @@ ul {
 
 #header-home #main-nav .nav-links li a:hover {
   color: #a6a6a6;
+}
+
+#header-home #main-nav .nav-links .dropdown {
+  position: relative;
+}
+
+#header-home #main-nav .nav-links .dropdown .dropdown-menu {
+  position: absolute;
+  background-color: #140024;
+  width: 110px;
+  text-align: left;
+  padding-left: 1rem;
+  margin-top: 0.3rem;
+  border-radius: 5px;
+  display: none;
+}
+
+#header-home #main-nav .nav-links .dropdown .dropdown-menu .dropdown-item {
+  color: #fff;
+  margin: 0;
+  padding: 0.2rem 0;
+}
+
+#header-home #main-nav .nav-links .dropdown a:focus + ul {
+  display: block;
 }
 
 #content .container {
