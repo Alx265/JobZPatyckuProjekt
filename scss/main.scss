@@ -32,7 +32,16 @@ ul {
   right: 0;
   color: #fff;
   #main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
+    .checkbtn {
+      display: none;
+    }
+    #check {
+      display: none;
+    }
     #logo {
       position: absolute;
       top: -47px;
@@ -40,8 +49,6 @@ ul {
       width: 115px;
       height: 115px;
     }
-    display: flex;
-    justify-content: space-between;
     .nav-links {
       .special-color {
         background-color: $special-color;

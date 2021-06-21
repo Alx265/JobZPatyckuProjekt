@@ -134,13 +134,24 @@ ul {
 }
 
 #header-home #main-nav {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+#header-home #main-nav .checkbtn {
+  display: none;
+}
+
+#header-home #main-nav #check {
+  display: none;
 }
 
 #header-home #main-nav #logo {
@@ -993,6 +1004,40 @@ ul {
 }
 
 @media (max-width: 769px) {
+  #header-home {
+    z-index: 100;
+  }
+  #header-home #main-nav {
+    height: 1.7rem;
+  }
+  #header-home #main-nav .checkbtn {
+    position: absolute;
+    right: 0;
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+  }
+  #header-home #main-nav #check {
+    display: none;
+  }
+  #header-home #main-nav #check:checked ~ .nav-links {
+    left: 0;
+  }
+  #header-home #main-nav .nav-links {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background: #262626;
+    top: 58px;
+    left: -100%;
+    text-align: center;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  #header-home #main-nav .nav-links li {
+    margin-top: 2rem;
+  }
   #content #sidebar-content {
     display: none;
   }

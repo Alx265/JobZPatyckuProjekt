@@ -14,7 +14,41 @@
   }
 }
 
+// Tablets
 @media (max-width: 769px) {
+  #header-home {
+    z-index: 100;
+    #main-nav {
+      height: 1.7rem;
+      .checkbtn {
+        position: absolute;
+        right: 0;
+        font-size: 30px;
+        cursor: pointer;
+        display: block;
+      }
+      #check {
+        display: none;
+      }
+      #check:checked ~ .nav-links {
+        left: 0;
+      }
+      .nav-links {
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background: $main-color;
+        top: 58px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        li {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
   #content {
     #sidebar-content {
       display: none;
