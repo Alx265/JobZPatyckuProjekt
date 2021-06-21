@@ -96,14 +96,14 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   background-color: #262626;
   line-height: 1.6;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,6 +125,7 @@ ul {
   width: 100%;
   top: 0;
   left: 0;
+  right: 0;
   color: #fff;
 }
 
@@ -193,9 +194,9 @@ ul {
 #header-home #main-nav .nav-links .dropdown .dropdown-menu {
   position: absolute;
   background-color: #140024;
-  width: 110px;
+  width: 120px;
   text-align: left;
-  padding-left: 1rem;
+  padding-left: 0.7rem;
   margin-top: 0.3rem;
   border-radius: 5px;
   display: none;
@@ -211,17 +212,17 @@ ul {
   display: block;
 }
 
+#content {
+  -webkit-box-flex: 65%;
+      -ms-flex: 65%;
+          flex: 65%;
+}
+
 #content .container {
   padding-top: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-#content .main-content {
-  -webkit-box-flex: 65%;
-      -ms-flex: 65%;
-          flex: 65%;
 }
 
 #content .main-content .article .article-content {
@@ -235,7 +236,7 @@ ul {
   display: -ms-flexbox;
   display: flex;
   background-color: #383838;
-  width: 85%;
+  width: 90%;
   padding: 0.5rem 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -251,7 +252,7 @@ ul {
 }
 
 #content .main-content .article .article-content .article-details {
-  width: calc(85% - 16px);
+  width: 90%;
   color: #bfbfbf;
   background-color: #2b2b2b;
   padding-left: 1rem;
@@ -264,7 +265,7 @@ ul {
 
 #content .main-content .article .article-content .article-image {
   margin: 1rem 0;
-  width: 85%;
+  width: 90%;
   background-color: #9f2f2f;
 }
 
@@ -279,7 +280,7 @@ ul {
   text-align: left;
   padding: 0.5rem 0 0.5rem 1rem;
   margin-bottom: 2rem;
-  width: calc(85% - 16px);
+  width: 90%;
   background-color: #303030;
 }
 
