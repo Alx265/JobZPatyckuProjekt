@@ -1,0 +1,35 @@
+// Laptops
+@media (max-width: 1025px) {
+  .container {
+    max-width: 1000px;
+  }
+  #header-home {
+    #main-nav {
+      .nav-links {
+        li {
+          margin-left: 1.4rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  #content {
+    #sidebar-content {
+      display: none;
+    }
+    .main-content {
+      .article {
+        .article-content {
+          .article-title,
+          .article-details,
+          .article-image,
+          .article-actions {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

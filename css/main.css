@@ -1,5 +1,5 @@
 .container {
-  width: 1080px;
+  max-width: 1080px;
   padding: 0 1.5rem;
   text-align: center;
   margin: auto;
@@ -212,12 +212,6 @@ ul {
   display: block;
 }
 
-#content {
-  -webkit-box-flex: 65%;
-      -ms-flex: 65%;
-          flex: 65%;
-}
-
 #content .container {
   padding-top: 3rem;
   display: -webkit-box;
@@ -298,14 +292,14 @@ ul {
 }
 
 #content #sidebar-content {
-  -webkit-box-flex: 20%;
-      -ms-flex: 20%;
-          flex: 20%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 #content #sidebar-content .add-image {
-  width: 300px;
-  height: 300px;
+  width: 18.75rem;
+  height: 18.75rem;
 }
 
 #content #sidebar-content .profile {
@@ -987,5 +981,26 @@ ul {
 
 #footer-main .container ul li a:hover {
   color: #a6a6a6;
+}
+
+@media (max-width: 1025px) {
+  .container {
+    max-width: 1000px;
+  }
+  #header-home #main-nav .nav-links li {
+    margin-left: 1.4rem;
+  }
+}
+
+@media (max-width: 769px) {
+  #content #sidebar-content {
+    display: none;
+  }
+  #content .main-content .article .article-content .article-title,
+  #content .main-content .article .article-content .article-details,
+  #content .main-content .article .article-content .article-image,
+  #content .main-content .article .article-content .article-actions {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
