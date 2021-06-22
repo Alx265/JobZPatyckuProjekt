@@ -1040,6 +1040,8 @@ ul {
   }
   #header-home #main-nav .nav-links .dropdown .dropdown-menu {
     position: relative;
+    padding: 0;
+    margin: 0;
     width: 100%;
     text-align: center;
   }
