@@ -21,6 +21,7 @@ ul {
 }
 // Header
 #header-home {
+  z-index: 100;
   .container {
     overflow: visible;
   }
@@ -353,7 +354,6 @@ ul {
 #login-section {
   flex: 1;
   padding: 3rem 0 1rem 0;
-
   .login-form {
     background-color: lighten($main-color, 2%);
     border-radius: 15px;
