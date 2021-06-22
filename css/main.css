@@ -216,7 +216,7 @@ ul {
 #header-home #main-nav .nav-links .dropdown .dropdown-menu .dropdown-item {
   color: #fff;
   margin: 0;
-  padding: 0.2rem 0;
+  padding: 0.6rem 0;
 }
 
 #header-home #main-nav .nav-links .dropdown a:focus + ul {
@@ -635,6 +635,7 @@ ul {
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  margin-top: 1rem;
 }
 
 #login-section .login-form .login-form-btn:hover {
@@ -981,6 +982,8 @@ ul {
 
 #footer-main .container ul li {
   padding: 0.2rem 0.7rem;
+  color: #fff;
+  font-size: 0.8rem;
 }
 
 #footer-main .container ul li a,
@@ -1024,11 +1027,13 @@ ul {
     left: 0;
   }
   #header-home #main-nav .nav-links {
+    overflow: scroll;
     position: fixed;
     display: block;
     width: 100%;
     height: 100vh;
     background: #262626;
+    font-size: 1.2rem;
     top: 58px;
     left: -100%;
     text-align: center;
@@ -1037,11 +1042,15 @@ ul {
   }
   #header-home #main-nav .nav-links li {
     margin-top: 2rem;
+    margin-left: 0;
   }
   #header-home #main-nav .nav-links .dropdown .dropdown-menu {
+    background-color: #2b2b2b;
     position: relative;
     padding: 0;
     margin: 0;
+    font-size: 0.9rem;
+    margin-top: 1rem;
     width: 100%;
     text-align: center;
   }
@@ -1050,9 +1059,35 @@ ul {
   }
   #content .main-content .article .article-content .article-title,
   #content .main-content .article .article-content .article-details,
-  #content .main-content .article .article-content .article-image,
-  #content .main-content .article .article-content .article-actions {
+  #content .main-content .article .article-content .article-image {
     width: 100%;
+  }
+  #content .main-content .article .article-actions {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  #footer-main .container ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #footer-main .container ul li {
+    padding: 0;
+    margin: 0.3rem;
+  }
+  #create-post .create-post-select-menu {
+    margin-top: 2rem;
+  }
+  #create-post .create-post-select-menu i {
+    font-size: 5rem;
+  }
+  #create-post .create-post-picture-form,
+  #create-post .create-post-video-form {
+    width: 100%;
+    margin: 2rem 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

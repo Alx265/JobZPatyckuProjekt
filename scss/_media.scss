@@ -34,23 +34,29 @@
         left: 0;
       }
       .nav-links {
+        overflow: scroll;
         position: fixed;
         display: block;
         width: 100%;
         height: 100vh;
         background: $main-color;
+        font-size: 1.2rem;
         top: 58px;
         left: -100%;
         text-align: center;
         transition: all 0.5s;
         li {
           margin-top: 2rem;
+          margin-left: 0;
         }
         .dropdown {
           .dropdown-menu {
+            background-color: lighten($main-color, 2%);
             position: relative;
             padding: 0;
             margin: 0;
+            font-size: 0.9rem;
+            margin-top: 1rem;
             width: 100%;
             text-align: center;
           }
@@ -67,12 +73,43 @@
         .article-content {
           .article-title,
           .article-details,
-          .article-image,
-          .article-actions {
+          .article-image {
             width: 100%;
           }
         }
+        .article-actions {
+          width: 100%;
+        }
       }
+    }
+  }
+}
+// Phones
+@media (max-width: 500px) {
+  #footer-main {
+    .container {
+      ul {
+        flex-direction: column;
+        li {
+          padding: 0;
+          margin: 0.3rem;
+        }
+      }
+    }
+  }
+
+  #create-post {
+    .create-post-select-menu {
+      margin-top: 2rem;
+      i {
+        font-size: 5rem;
+      }
+    }
+
+    .create-post-picture-form,
+    .create-post-video-form {
+      width: 100%;
+      margin: 2rem 0;
     }
   }
 }

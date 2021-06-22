@@ -50,6 +50,7 @@
 }
 @mixin login-form-btn {
   @include submit-style;
+  margin-top: 1rem;
 }
 
 @mixin register-form-text {
