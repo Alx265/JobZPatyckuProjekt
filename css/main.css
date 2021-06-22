@@ -1038,6 +1038,11 @@ ul {
   #header-home #main-nav .nav-links li {
     margin-top: 2rem;
   }
+  #header-home #main-nav .nav-links .dropdown .dropdown-menu {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
   #content #sidebar-content {
     display: none;
   }

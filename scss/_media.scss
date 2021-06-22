@@ -46,6 +46,13 @@
         li {
           margin-top: 2rem;
         }
+        .dropdown {
+          .dropdown-menu {
+            position: relative;
+            width: 100%;
+            text-align: center;
+          }
+        }
       }
     }
   }
