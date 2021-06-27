@@ -51,6 +51,9 @@ ul {
       height: 115px;
     }
     .nav-links {
+      .logout-link {
+        display: none;
+      }
       .special-color {
         background-color: $special-color;
         padding: 0.5rem;
@@ -79,7 +82,7 @@ ul {
           width: 120px;
           text-align: left;
           padding-left: 0.7rem;
-          margin-top: 0.3rem;
+          margin-top: 0.1rem;
           border-radius: 5px;
           display: none;
           .dropdown-item {
@@ -89,7 +92,8 @@ ul {
           }
         }
       }
-      .dropdown a:focus + ul {
+      .dropdown a:focus + .dropdown-menu,
+      .dropdown .dropdown-menu:hover {
         display: block;
       }
     }
@@ -104,6 +108,9 @@ ul {
   }
   // Main content
   .main-content {
+    .activeBtn {
+      background-color: green;
+    }
     .article {
       .article-content {
         color: #fff;

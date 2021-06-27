@@ -175,6 +175,10 @@ ul {
           align-items: center;
 }
 
+#header-home #main-nav .nav-links .logout-link {
+  display: none;
+}
+
 #header-home #main-nav .nav-links .special-color {
   background-color: #140024;
   padding: 0.5rem;
@@ -209,7 +213,7 @@ ul {
   width: 120px;
   text-align: left;
   padding-left: 0.7rem;
-  margin-top: 0.3rem;
+  margin-top: 0.1rem;
   border-radius: 5px;
   display: none;
 }
@@ -220,7 +224,8 @@ ul {
   padding: 0.6rem 0;
 }
 
-#header-home #main-nav .nav-links .dropdown a:focus + ul {
+#header-home #main-nav .nav-links .dropdown a:focus + .dropdown-menu,
+#header-home #main-nav .nav-links .dropdown .dropdown-menu:hover {
   display: block;
 }
 
@@ -229,6 +234,10 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+#content .main-content .activeBtn {
+  background-color: green;
 }
 
 #content .main-content .article .article-content {
