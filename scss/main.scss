@@ -108,6 +108,55 @@ ul {
   }
   // Main content
   .main-content {
+    width: 80%;
+    .profile {
+      display: flex;
+      .profile-avatar {
+        text-align: left;
+        .profile-avatar-img {
+          width: 150px;
+          height: 150px;
+          background-color: $special-color;
+          border-radius: 50%;
+        }
+      }
+      .profile-info {
+        color: #fff;
+        padding-left: 1rem;
+        .profile-details {
+          display: flex;
+          li,
+          i {
+            padding-right: 0.5rem;
+          }
+        }
+        .profile-name {
+          font-size: 3rem;
+          text-align: left;
+        }
+      }
+    }
+    .user-stats {
+      display: flex;
+      justify-content: space-around;
+      a {
+        margin: 3rem 1rem;
+        color: #fff;
+        align-items: center;
+        text-decoration: none;
+        font-size: 1.1rem;
+        background-color: $special-color;
+        padding: 1rem;
+        width: 300px;
+        border-radius: 5px;
+      }
+      a:hover {
+        background-color: lighten($special-color, 20%);
+      }
+      .active {
+        background-color: lighten($special-color, 20%);
+      }
+    }
     .activeBtn {
       background-color: green;
     }
@@ -174,7 +223,7 @@ ul {
   }
 
   #sidebar-content {
-    flex: 1;
+    width: 30%;
     .add-image {
       width: 18.75rem;
       height: 18.75rem;

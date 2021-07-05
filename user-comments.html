@@ -4,13 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Strona z obrazkami i filmikami" />
+    <meta name="author" content="Marcin Wawreczko, Adrian Treściński" />
+    <meta
+      name="keywords"
+      content="JobZpatycku, memy, posty, filmiki, movies, images"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
     <title>JebZPatycku</title>
   </head>
   <body>
@@ -44,7 +50,9 @@
               <li>
                 <a href="#">Kategorie <i class="fas fa-sort-down"></i></a>
                 <ul class="dropdown-menu">
-                  <li class="dropdown-item"><a href="#">Ciekawostki</a></li>
+                  <li class="dropdown-item">
+                    <a href="#">Ciekawostki</a>
+                  </li>
                   <li class="dropdown-item"><a href="#">Gry</a></li>
                   <li class="dropdown-item"><a href="#">Sport</a></li>
                   <li class="dropdown-item"><a href="#">Filmy</a></li>
@@ -68,73 +76,96 @@
                 ></a
               >
             </li>
+            <li class="logout-link"><a href="#" class="logout">Wyloguj</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <!-- Create post picture form -->
-    <section id="create-post">
+    <!-- Section content -->
+    <section id="content">
       <div class="container">
-        <h2>Dodaj swojego posta już teraz !</h2>
-        <div class="border-line"></div>
-        <span>Wybierz co zamierzasz wrzucić</span>
-
-        <div class="create-post-select-menu">
-          <a href="picture.html"
-            ><i class="far fa-image fa-7x"></i
-            ><span class="un-active">Obrazek</span></a
-          >
-
-          <a href="video.html"
-            ><i class="fas fa-video fa-7x active"></i
-            ><span class="active">Filmik</span></a
-          >
-        </div>
-        <form class="create-post-video-form" id="create-post-video-form">
-          <div class="create-post-control">
-            <input
-              class="create-post-title"
-              type="text"
-              name="title"
-              id="title"
-              placeholder="Tytuł twojego filmiku"
-              autocomplete="off"
-            />
-            <small>Error message</small>
-          </div>
-          <div class="create-post-control">
-            <select name="category" id="category" class="create-post-select">
-              <option value="" disabled selected>Wybierz kategorie</option>
-              <option value="Ciekawostki">Ciekawostki</option>
-              <option value="Gry">Gry</option>
-              <option value="Sport">Sport</option>
-              <option value="Filmy">Filmy</option>
-              <option value="Zwierzęta">Zwierzęta</option>
-              <option value="Humor">Humor</option>
-              <option value="Polityka">Polityka</option>
-              <option value="Muzyka">Muzyka</option>
-              <option value="Czarny humor">Czarny humor</option>
-              <option value="Pasty">Pasty</option>
-              <option value="Nauka">Nauka</option>
-              <option value="Pytanie">Pytanie</option>
-              <option value="Motoryzacja">Motoryzacja</option>
-            </select>
-            <small>Error message</small>
-          </div>
-          <div class="create-post-control">
-            <label class="custom-file-upload">
-              <input
-                type="file"
-                id="file-image-1"
-                accept="video/*"
-                onchange="showPreview(event);"
+        <!-- Profile content -->
+        <main class="main-content">
+          <div class="profile">
+            <div class="profile-avatar">
+              <img
+                src="/img/logokrecik.svg"
+                alt="Avatar profile"
+                class="profile-avatar-img"
               />
-              <i class="fa fa-cloud-upload"></i>&nbsp; Kliknij tutaj aby dodać
-              filmik
-            </label>
+            </div>
+            <div class="profile-info">
+              <div class="profile-name">Alx265</div>
+              <ul class="profile-details">
+                <li class="profile-create-date">
+                  <i class="fas fa-calendar-alt"></i> 15.06.2021
+                </li>
+                <li class="profile-comments">
+                  <i class="fas fa-comments"></i> 210
+                </li>
+              </ul>
+            </div>
           </div>
-          <input type="submit" value="Wyślij" class="create-post-btn" />
-        </form>
+          <div class="user-stats">
+            <a href="user-posts.html">Posty użytkownika</a>
+            <a href="user-comments.html" class="active"
+              >Komentarze użytkownika</a
+            >
+          </div>
+        </main>
+        <!-- Aside content -->
+        <aside id="sidebar-content">
+          <img src="/img/add.png" alt="Advertisement" class="add-image" />
+          <div class="profile">
+            <div class="profile-avatar">
+              <img
+                src="/img/logokrecik.svg"
+                alt="Avatar profile"
+                class="profile-avatar-img"
+              />
+            </div>
+            <div class="profile-info">
+              <ul class="profile-details">
+                <li class="profile-name">
+                  <i class="fas fa-user"></i> <a href="profile.html">Alx</a>
+                </li>
+                <li class="profile-create-date">
+                  <i class="fas fa-calendar-alt"></i> 15.06.2021
+                </li>
+                <li class="profile-comments">
+                  <i class="fas fa-comments"></i> 210
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="profile-actions">
+            <ul class="profile-settings">
+              <li><a href="profile.html">Profil</a></li>
+              <li><a href="settings.html">Ustawienia</a></li>
+            </ul>
+          </div>
+          <div class="popular">
+            <h3>Zyskujące popularność</h3>
+            <div class="popular-posts">
+              <img
+                src="https://source.unsplash.com/WLUHO9A_xik/1600x900"
+                class="trending-post"
+              />
+            </div>
+            <div class="popular-posts">
+              <img
+                src="https://source.unsplash.com/WLUHO9A_xik/1600x900"
+                class="trending-post"
+              />
+            </div>
+            <div class="popular-posts">
+              <img
+                src="https://source.unsplash.com/WLUHO9A_xik/1600x900"
+                class="trending-post"
+              />
+            </div>
+          </div>
+        </aside>
       </div>
     </section>
     <!-- Footer -->
@@ -150,7 +181,7 @@
       </div>
     </footer>
 
-    <script src="/js/create-movie.js"></script>
+    <script src="/js/main.js"></script>
     <script
       src="https://kit.fontawesome.com/7e577ef14f.js"
       crossorigin="anonymous"

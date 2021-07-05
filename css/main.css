@@ -236,6 +236,78 @@ ul {
   display: flex;
 }
 
+#content .main-content {
+  width: 80%;
+}
+
+#content .main-content .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#content .main-content .profile .profile-avatar {
+  text-align: left;
+}
+
+#content .main-content .profile .profile-avatar .profile-avatar-img {
+  width: 150px;
+  height: 150px;
+  background-color: #140024;
+  border-radius: 50%;
+}
+
+#content .main-content .profile .profile-info {
+  color: #fff;
+  padding-left: 1rem;
+}
+
+#content .main-content .profile .profile-info .profile-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#content .main-content .profile .profile-info .profile-details li,
+#content .main-content .profile .profile-info .profile-details i {
+  padding-right: 0.5rem;
+}
+
+#content .main-content .profile .profile-info .profile-name {
+  font-size: 3rem;
+  text-align: left;
+}
+
+#content .main-content .user-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#content .main-content .user-stats a {
+  margin: 3rem 1rem;
+  color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-size: 1.1rem;
+  background-color: #140024;
+  padding: 1rem;
+  width: 300px;
+  border-radius: 5px;
+}
+
+#content .main-content .user-stats a:hover {
+  background-color: #4d008a;
+}
+
+#content .main-content .user-stats .active {
+  background-color: #4d008a;
+}
+
 #content .main-content .activeBtn {
   background-color: green;
 }
@@ -313,9 +385,7 @@ ul {
 }
 
 #content #sidebar-content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  width: 30%;
 }
 
 #content #sidebar-content .add-image {
@@ -1066,6 +1136,9 @@ ul {
   }
   #content #sidebar-content {
     display: none;
+  }
+  #content .main-content {
+    width: 100%;
   }
   #content .main-content .article .article-content .article-title,
   #content .main-content .article .article-content .article-details,
