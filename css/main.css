@@ -240,6 +240,25 @@ ul {
   width: 80%;
 }
 
+#content .main-content .user-post-category-select {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 1rem 0;
+  border: 1px solid;
+  border-radius: 0.6rem;
+  background: #111;
+  padding: 1.5rem 3rem;
+  outline: none;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: auto;
+  padding: 1rem 1rem;
+  width: 80%;
+}
+
 #content .main-content .profile {
   display: -webkit-box;
   display: -ms-flexbox;

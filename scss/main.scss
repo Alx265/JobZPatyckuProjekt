@@ -109,6 +109,12 @@ ul {
   // Main content
   .main-content {
     width: 80%;
+    .user-post-category-select {
+      @include create-post-select;
+      margin: auto;
+      padding: 1rem 1rem;
+      width: 80%;
+    }
     .profile {
       display: flex;
       .profile-avatar {
