@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Strona z obrazkami i filmikami" />
+    <meta name="author" content="Marcin Wawreczko, Adrian Treściński" />
+    <meta
+      name="keywords"
+      content="JobZpatycku, memy, posty, filmiki, movies, images"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>JebZPatycku</title>
+  </head>
+  <body>
+    <!-- Header content -->
+    <header id="header-home">
+      <div class="container">
+        <nav id="main-nav" class="my-1">
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <a href="index.html">
+            <img src="/img/logokrecik.svg" alt="JobZpatycku logo" id="logo"
+          /></a>
+          <ul class="nav-links">
+            <li>
+              <a href="create-post.html"
+                ><span class="special-color"
+                  ><i class="fas fa-plus"></i> Upload</span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="#">Nowości</a>
+            </li>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">Oczekujące</a></li>
+            <li><a href="#">Losowe</a></li>
+            <li><a href="#">Top</a></li>
+            <div class="dropdown">
+              <li>
+                <a href="#">Kategorie <i class="fas fa-sort-down"></i></a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item">
+                    <a href="#">Ciekawostki</a>
+                  </li>
+                  <li class="dropdown-item"><a href="#">Gry</a></li>
+                  <li class="dropdown-item"><a href="#">Sport</a></li>
+                  <li class="dropdown-item"><a href="#">Filmy</a></li>
+                  <li class="dropdown-item"><a href="#">Zwierzęta</a></li>
+                  <li class="dropdown-item"><a href="#">Humor</a></li>
+                  <li class="dropdown-item"><a href="#">Polityka</a></li>
+                  <li class="dropdown-item"><a href="#">Muzyka</a></li>
+                  <li class="dropdown-item"><a href="#">Czarny humor</a></li>
+                  <li class="dropdown-item"><a href="#">Pasty</a></li>
+                  <li class="dropdown-item"><a href="#">Nauka</a></li>
+                  <li class="dropdown-item"><a href="#">Pytanie</a></li>
+                  <li class="dropdown-item"><a href="#">Motoryzacja</a></li>
+                </ul>
+              </li>
+            </div>
+            <li><a href="login.html">Logowanie</a></li>
+            <li>
+              <a href="register.html"
+                ><span class="special-color"
+                  ><i class="fas fa-user-plus"></i> Rejestracja</span
+                ></a
+              >
+            </li>
+            <li class="logout-link"><a href="#" class="logout">Wyloguj</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Section content -->
+    <section id="content">
+      <div class="container">
+        <!-- Profile content -->
+        <main class="main-content">
+          <img src="/img/rsz_stronabudowa.png" alt="work" />
+        </main>
+        <!-- Aside content -->
+        <aside id="sidebar-content">
+          <img src="/img/add.png" alt="Advertisement" class="add-image" />
+          <div class="profile">
+            <div class="profile-avatar">
+              <img
+                src="/img/logokrecik.svg"
+                alt="Avatar profile"
+                class="profile-avatar-img"
+              />
+            </div>
+            <div class="profile-info">
+              <ul class="profile-details">
+                <li class="profile-name">
+                  <i class="fas fa-user"></i> <a href="profile.html">Alx</a>
+                </li>
+                <li class="profile-create-date">
+                  <i class="fas fa-calendar-alt"></i> 15.06.2021
+                </li>
+                <li class="profile-comments">
+                  <i class="fas fa-comments"></i> 210
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="profile-actions">
+            <ul class="profile-settings">
+              <li><a href="profile.html">Profil</a></li>
+              <li><a href="settings.html">Ustawienia</a></li>
+            </ul>
+          </div>
+          <div class="popular">
+            <h3>Zyskujące popularność</h3>
+            <div class="popular-posts">
+              <img
+                src="https://source.unsplash.com/WLUHO9A_xik/1600x900"
+                class="trending-post"
+              />
+            </div>
+            <div class="popular-posts">
+              <img
+                src="https://source.unsplash.com/WLUHO9A_xik/1600x900"
+                class="trending-post"
+              />
+            </div>
+            <div class="popular-posts">
+              <img
+                src="https://source.unsplash.com/WLUHO9A_xik/1600x900"
+                class="trending-post"
+              />
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer id="footer-main">
+      <div class="container">
+        <ul>
+          <li><a href="contact.html">Kontakt</a></li>
+          <li><a href="#">Polityka prywatności</a></li>
+          <li>Copyright &copy; 2021</li>
+          <li>Frontend Marcin Wawreczko</li>
+          <li>Backend Adrian Treściński</li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/7e577ef14f.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
