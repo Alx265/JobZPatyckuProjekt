@@ -106,6 +106,7 @@
               </ul>
             </div>
           </div>
+          <div class="border-line"></div>
           <div class="user-stats">
             <a href="user-posts.html" class="active">Posty użytkownika</a>
             <a href="user-comments.html">Komentarze użytkownika</a>
@@ -116,22 +117,80 @@
               id="category"
               class="user-post-category-select"
             >
-              <option value="" disabled selected>Wybierz kategorie</option>
-              <option value="Ciekawostki">Ciekawostki</option>
-              <option value="Gry">Gry</option>
-              <option value="Sport">Sport</option>
-              <option value="Filmy">Filmy</option>
-              <option value="Zwierzęta">Zwierzęta</option>
-              <option value="Humor">Humor</option>
-              <option value="Polityka">Polityka</option>
-              <option value="Muzyka">Muzyka</option>
-              <option value="Czarny humor">Czarny humor</option>
-              <option value="Pasty">Pasty</option>
-              <option value="Nauka">Nauka</option>
-              <option value="Pytanie">Pytanie</option>
-              <option value="Motoryzacja">Motoryzacja</option>
+              <option class="optgroup" value="" disabled selected>
+                Wybierz kategorie
+              </option>
+              <option class="optgroup" value="Ciekawostki">Ciekawostki</option>
+              <option class="optgroup" value="Gry">Gry</option>
+              <option class="optgroup" value="Sport">Sport</option>
+              <option class="optgroup" value="Filmy">Filmy</option>
+              <option class="optgroup" value="Zwierzęta">Zwierzęta</option>
+              <option class="optgroup" value="Humor">Humor</option>
+              <option class="optgroup" value="Polityka">Polityka</option>
+              <option class="optgroup" value="Muzyka">Muzyka</option>
+              <option class="optgroup" value="Czarny humor">
+                Czarny humor
+              </option>
+              <option class="optgroup" value="Pasty">Pasty</option>
+              <option class="optgroup" value="Nauka">Nauka</option>
+              <option class="optgroup" value="Pytanie">Pytanie</option>
+              <option class="optgroup" value="Motoryzacja">Motoryzacja</option>
             </select>
           </div>
+          <article class="article">
+            <div class="article-content">
+              <h2 class="article-title-profile">
+                <img
+                  src="/img/avatar.png"
+                  class="article-avatar"
+                  alt="article-avatar"
+                />Tutaj jest jakis tytul
+              </h2>
+              <div class="article-details">
+                <div class="article-add-time">
+                  <span class="article-time"> 20 godzin temu </span>
+                </div>
+                <div class="article-category">
+                  <span class="article-category-details">Kategoria</span>
+                </div>
+              </div>
+              <img src=https://source.unsplash.com/user/erondu/daily
+              class="article-image" alt="article-image"/>
+            </div>
+            <div class="article-actions">
+              <button type="button" class="article-actions-plus">
+                <i class="fas fa-plus fa-2x"></i>
+              </button>
+              <span class="article-actions-plus-votes">+2901</span>
+            </div>
+          </article>
+          <article class="article">
+            <div class="article-content">
+              <h2 class="article-title-profile">
+                <img
+                  src="/img/avatar.png"
+                  class="article-avatar"
+                  alt="article-avatar"
+                />Tutaj jest jakis tytul
+              </h2>
+              <div class="article-details">
+                <div class="article-add-time">
+                  <span class="article-time"> 20 godzin temu </span>
+                </div>
+                <div class="article-category">
+                  <span class="article-category-details">Kategoria</span>
+                </div>
+              </div>
+              <img src=https://source.unsplash.com/user/erondu/daily
+              class="article-image" alt="article-image"/>
+            </div>
+            <div class="article-actions">
+              <button type="button" class="article-actions-plus">
+                <i class="fas fa-plus fa-2x"></i>
+              </button>
+              <span class="article-actions-plus-votes">+2901</span>
+            </div>
+          </article>
         </main>
         <!-- Aside content -->
         <aside id="sidebar-content">
@@ -200,7 +259,6 @@
         </ul>
       </div>
     </footer>
-
     <script src="/js/main.js"></script>
     <script
       src="https://kit.fontawesome.com/7e577ef14f.js"
