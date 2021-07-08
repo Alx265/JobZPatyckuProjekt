@@ -269,6 +269,12 @@ ul {
 }
 
 #content .main-content #pagination a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 49%;
   padding: 0.7rem;
   background-color: #140024;
@@ -277,6 +283,12 @@ ul {
   font-size: 1.2rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  border-radius: 5px;
+}
+
+#content .main-content #pagination a .pagination-center {
+  margin-right: auto;
+  margin-left: 2rem;
 }
 
 #content .main-content #pagination a:hover {
@@ -401,6 +413,11 @@ ul {
 #content .main-content .article .article-content .article-title .article-avatar {
   margin: 0 1rem;
   background-color: #9f2f2f;
+}
+
+#content .main-content .article .article-content .article-title a {
+  text-decoration: none;
+  color: #fff;
 }
 
 #content .main-content .article .article-content .article-details {
@@ -1149,6 +1166,9 @@ ul {
   #header-home #main-nav .nav-links li {
     margin-left: 1.4rem;
   }
+  #content .main-content #pagination {
+    max-width: 600px;
+  }
 }
 
 @media (max-width: 769px) {
@@ -1204,6 +1224,9 @@ ul {
   }
   #content .main-content {
     width: 100%;
+  }
+  #content .main-content #pagination {
+    max-width: 720px;
   }
   #content .main-content .article .article-content .article-title,
   #content .main-content .article .article-content .article-details,

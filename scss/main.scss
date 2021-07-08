@@ -125,6 +125,8 @@ ul {
       justify-content: space-between;
       max-width: 658px;
       a {
+        display: flex;
+        align-items: center;
         width: 49%;
         padding: 0.7rem;
         background-color: $special-color;
@@ -132,6 +134,11 @@ ul {
         text-decoration: none;
         font-size: 1.2rem;
         transition: all 0.5s;
+        border-radius: 5px;
+        .pagination-center {
+          margin-right: auto;
+          margin-left: 2rem;
+        }
       }
       a:hover {
         background-color: lighten($special-color, 20%);
@@ -215,6 +222,10 @@ ul {
           .article-avatar {
             margin: 0 1rem;
             background-color: $secondary-color;
+          }
+          a {
+            text-decoration: none;
+            color: #fff;
           }
         }
         .article-details {
