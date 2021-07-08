@@ -388,6 +388,7 @@ ul {
         cursor: pointer;
         font-size: 1rem;
         border-radius: 5px;
+        transition: all 0.5s;
       }
       .comments-submit:hover {
         background-color: lighten($special-color, 20%);
