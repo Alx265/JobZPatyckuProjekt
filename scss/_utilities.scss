@@ -6,6 +6,10 @@
   overflow: hidden;
 }
 
+.active {
+  color: $active-color;
+}
+
 @mixin input-style {
   display: block;
   width: 100%;
