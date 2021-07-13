@@ -1,11 +1,14 @@
 @import "variables";
 @import "utilities";
 
+// Reset styles
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
   color: #fff;
@@ -70,7 +73,6 @@ ul {
       li {
         margin-left: 2rem;
         a {
-          text-decoration: none;
           align-items: center;
           transition: all 0.5s;
         }
@@ -238,6 +240,9 @@ ul {
           background-color: lighten($main-color, 2%);
           padding-left: 1rem;
           .article-category {
+            .article-user {
+              padding-right: 0.2rem;
+            }
             .article-category-details {
               font-size: 0.8rem;
               color: white;
