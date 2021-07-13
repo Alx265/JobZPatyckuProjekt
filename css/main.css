@@ -1334,6 +1334,9 @@ ul {
   #content .main-content {
     width: 100%;
   }
+  #content .main-content #comments .comments-form {
+    width: 100%;
+  }
   #content .main-content #pagination {
     max-width: 720px;
   }
@@ -1352,6 +1355,9 @@ ul {
     font-size: 0.7rem;
   }
   #pagination .pagination-buttons i {
+    display: none;
+  }
+  #comments .comments-form .article-avatar {
     display: none;
   }
   #footer-main {

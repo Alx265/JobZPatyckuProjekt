@@ -79,6 +79,11 @@
     }
     .main-content {
       width: 100%;
+      #comments {
+        .comments-form {
+          width: 100%;
+        }
+      }
       #pagination {
         max-width: 720px;
       }
@@ -107,6 +112,13 @@
         }
       }
       i {
+        display: none;
+      }
+    }
+  }
+  #comments {
+    .comments-form {
+      .article-avatar {
         display: none;
       }
     }
