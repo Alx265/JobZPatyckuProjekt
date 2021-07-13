@@ -126,28 +126,54 @@ ul {
       }
     }
     #pagination {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
       max-width: 658px;
-      a {
+      .pagination-buttons {
         display: flex;
         align-items: center;
-        width: 49%;
-        padding: 0.7rem;
-        background-color: $special-color;
-        color: #fff;
-        text-decoration: none;
-        font-size: 1.2rem;
-        transition: all 0.5s;
-        border-radius: 5px;
-        .pagination-center {
-          margin-right: auto;
-          margin-left: 2rem;
+        justify-content: space-between;
+        a {
+          display: flex;
+          align-items: center;
+          width: 49%;
+          padding: 0.7rem;
+          background-color: $special-color;
+          color: #fff;
+          text-decoration: none;
+          font-size: 1.2rem;
+          transition: all 0.5s;
+          border-radius: 5px;
+          .pagination-center {
+            margin-right: auto;
+            margin-left: 2rem;
+          }
+        }
+        a:hover {
+          background-color: lighten($special-color, 20%);
         }
       }
-      a:hover {
-        background-color: lighten($special-color, 20%);
+      .pagination-pages {
+        color: #fff;
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        a {
+          flex: 1;
+          margin-right: 0.2rem;
+          margin-top: 0.5rem;
+          max-width: 658px;
+          padding: 0.5rem;
+          background-color: lighten($main-color, 7%);
+        }
+        a:last-child {
+          margin-right: 0;
+        }
+        a:hover {
+          background-color: lighten($main-color, 30%);
+        }
+        .active {
+          background-color: lighten($main-color, 30%);
+          color: #fff;
+        }
       }
     }
     .border-line {

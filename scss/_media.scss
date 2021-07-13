@@ -99,6 +99,18 @@
 }
 // Phones
 @media (max-width: 500px) {
+  #pagination {
+    .pagination-buttons {
+      a {
+        .pagination-center {
+          font-size: 0.7rem;
+        }
+      }
+      i {
+        display: none;
+      }
+    }
+  }
   #footer-main {
     margin-top: 3rem;
     .container {
@@ -111,7 +123,6 @@
       }
     }
   }
-
   #create-post {
     .create-post-select-menu {
       margin-top: 2rem;
