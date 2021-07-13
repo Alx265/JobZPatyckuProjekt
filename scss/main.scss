@@ -176,11 +176,7 @@ ul {
         }
       }
     }
-    .border-line {
-      width: 80%;
-      margin: 3rem auto 0 auto;
-      height: 4px;
-    }
+
     .user-post-category-select {
       @include create-post-select;
       padding: 0.8rem 0.8rem;
@@ -218,6 +214,7 @@ ul {
     }
     .user-stats {
       display: flex;
+      max-width: 658px;
       justify-content: space-around;
       a {
         margin: 3rem 1rem;
@@ -389,6 +386,36 @@ ul {
 
   #comments {
     color: #fff;
+    .comments-header {
+      max-width: 658px;
+      display: flex;
+      align-items: center;
+      margin-top: 1rem;
+      padding: 1rem;
+      background-color: lighten($main-color, 2%);
+      justify-content: space-between;
+
+      .comments-count {
+        i {
+          margin-right: 0.3rem;
+        }
+      }
+      .comments-actions {
+        .active {
+          color: lighten($secondary-color, 10%);
+        }
+        a {
+          margin-right: 0.6rem;
+          transition: all 0.5s;
+        }
+        a:last-child {
+          margin: 0;
+        }
+        a:hover {
+          color: lighten($secondary-color, 10%);
+        }
+      }
+    }
     .comments-form {
       background-color: lighten($main-color, 2%);
       width: 90%;
