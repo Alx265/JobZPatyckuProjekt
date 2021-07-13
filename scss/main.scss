@@ -386,6 +386,7 @@ ul {
 
   #comments {
     color: #fff;
+
     .comments-header {
       max-width: 658px;
       display: flex;
@@ -416,6 +417,7 @@ ul {
         }
       }
     }
+
     .comments-form {
       background-color: lighten($main-color, 2%);
       width: 90%;
@@ -460,6 +462,8 @@ ul {
         padding: 0.5rem;
         display: block;
       }
+    }
+    .comments-list {
     }
   }
 }
