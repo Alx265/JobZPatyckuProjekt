@@ -621,6 +621,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 1rem;
+  margin-bottom: 2rem;
   padding: 1rem;
   background-color: #2b2b2b;
   -webkit-box-pack: justify;
@@ -691,8 +692,8 @@ ul {
   cursor: pointer;
   font-size: 1rem;
   border-radius: 5px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0 0.5s;
+  transition: all 0 0.5s;
 }
 
 #content #comments .comments-form .comments-submit:hover {
@@ -702,6 +703,111 @@ ul {
 #content #comments .comments-form label {
   padding: 0.5rem;
   display: block;
+}
+
+#content #comments .comments-container {
+  max-width: 658px;
+}
+
+#content #comments .comments-container .comment:last-child {
+  margin-bottom: 4rem;
+}
+
+#content #comments .comments-container .comment {
+  padding: 1rem;
+  background-color: #2b2b2b;
+}
+
+#content #comments .comments-container .comment .comment-avatar {
+  margin-right: 0.5rem;
+}
+
+#content #comments .comments-container .comment .comment-avatar img {
+  width: 40px;
+  height: 40px;
+  background-color: #9f2f2f;
+}
+
+#content #comments .comments-container .comment .comment-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#content #comments .comments-container .comment .comment-header .comment-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#content #comments .comments-container .comment .comment-header .comment-details .comment-time {
+  color: #c53c3c;
+}
+
+#content #comments .comments-container .comment .comment-header .comment-stats button {
+  cursor: pointer;
+}
+
+#content #comments .comments-container .comment .comment-header .comment-stats .comment-votes {
+  margin: 0 0.2rem;
+  font-size: 0.95rem;
+}
+
+#content #comments .comments-container .comment .comment-header .comment-stats .button-plus-vote,
+#content #comments .comments-container .comment .comment-header .comment-stats .button-minus-vote {
+  color: #bfbfbf;
+  padding: 0.4rem 0.4rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background: #262626;
+}
+
+#content #comments .comments-container .comment .comment-header .comment-stats .active-plus {
+  background: #2ecc71;
+  color: #fff;
+}
+
+#content #comments .comments-container .comment .comment-header .comment-stats .active-minus {
+  background: #e74c3c;
+  color: #fff;
+}
+
+#content #comments .comments-container .comment .comment-header .comment-time {
+  display: block;
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+#content #comments .comments-container .comment .comment-content .comment-text {
+  text-align: left;
+}
+
+#content #comments .comments-container .comment .comment-actions {
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+#content #comments .comments-container .comment .comment-actions .comment-reply {
+  margin-right: 0.7rem;
+}
+
+#content #comments .comments-container .comment .comment-actions .comment-reply i {
+  margin-right: 0.1rem;
+}
+
+#content #comments .comments-container .comment .comment-actions .comment-report i {
+  margin-right: 0.1rem;
+}
+
+#content #comments .comments-container .comment a:hover {
+  color: #c53c3c;
 }
 
 #contact-section {
