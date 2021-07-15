@@ -474,6 +474,12 @@ ul {
       .comment {
         padding: 1rem;
         background-color: lighten($main-color, 2%);
+        .comment-sub {
+          margin-left: 3rem;
+          margin-top: 2.5rem;
+          border-left: 1px solid #fff;
+          padding-left: 2rem;
+        }
         .comment-avatar {
           margin-right: 0.5rem;
           img {
@@ -526,6 +532,7 @@ ul {
             text-align: left;
           }
         }
+
         .comment-content {
           .comment-text {
             text-align: left;
@@ -534,6 +541,7 @@ ul {
         .comment-actions {
           text-align: left;
           font-size: 0.8rem;
+          margin-bottom: 1rem;
           .comment-reply {
             i {
               margin-right: 0.1rem;
