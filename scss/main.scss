@@ -27,6 +27,21 @@ ul {
   list-style-type: none;
 }
 
+.console {
+  height: 2rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  background-color: lighten($main-color, 7%);
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 // Header
 #header-home {
   z-index: 100;
@@ -426,9 +441,9 @@ ul {
       width: 90%;
       text-align: left;
       display: flex;
-      padding: 1.3rem;
+      padding: 1rem;
       textarea {
-        height: 50px;
+        height: 40px;
         width: 70%;
         margin: auto;
         margin-right: 1.5rem;
@@ -443,14 +458,14 @@ ul {
       .article-avatar {
         background-color: $secondary-color;
         margin: 0 0.5rem;
-        height: 50px;
-        width: 50px;
+        height: 40px;
+        width: 40px;
       }
       .comments-submit {
         background-color: $special-color;
         border: none;
         color: #fff;
-        height: 50px;
+        height: 40px;
         width: 80px;
         text-align: center;
         cursor: pointer;

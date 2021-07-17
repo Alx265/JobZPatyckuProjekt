@@ -127,6 +127,21 @@ ul {
   list-style-type: none;
 }
 
+.console {
+  height: 2rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  background-color: #383838;
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 #header-home {
   z-index: 100;
   background: #9f2f2f;
@@ -658,11 +673,11 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.3rem;
+  padding: 1rem;
 }
 
 #content #comments .comments-form textarea {
-  height: 50px;
+  height: 40px;
   width: 70%;
   margin: auto;
   margin-right: 1.5rem;
@@ -678,15 +693,15 @@ ul {
 #content #comments .comments-form .article-avatar {
   background-color: #9f2f2f;
   margin: 0 0.5rem;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
 }
 
 #content #comments .comments-form .comments-submit {
   background-color: #140024;
   border: none;
   color: #fff;
-  height: 50px;
+  height: 40px;
   width: 80px;
   text-align: center;
   cursor: pointer;

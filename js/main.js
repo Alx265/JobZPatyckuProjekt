@@ -11,3 +11,13 @@ voteBtn.addEventListener('click',() => {
 		count = 0;
 	}
 });
+
+const commentForm = document.querySelector('.comments-form');
+const avatar = document.querySelector('.article-avatar');
+const commentText = document.getElementsByName('comment')
+const commentSubmit = document.querySelector('comments-submit');
+const commentReply = document.querySelector('comment-reply');
+
+commentReply.addEventListener('click',() => {
+	
+});
