@@ -554,21 +554,124 @@ ul {
   margin-bottom: 0;
 }
 
-#content .main-content .settings .settings-user {
+#content .main-content .settings .settings-user,
+#content .main-content .settings .password-user,
+#content .main-content .settings .avatar-user {
   background-color: #2b2b2b;
-  max-width: 90%;
+  max-width: 85%;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-#content .main-content .settings .settings-user .user-info .user-info-header {
+#content .main-content .settings .settings-user .user-info .user-info-header,
+#content .main-content .settings .settings-user .user-info .password-header,
+#content .main-content .settings .settings-user .user-info .avatar-header,
+#content .main-content .settings .settings-user .password-info .user-info-header,
+#content .main-content .settings .settings-user .password-info .password-header,
+#content .main-content .settings .settings-user .password-info .avatar-header,
+#content .main-content .settings .settings-user .avatar-info .user-info-header,
+#content .main-content .settings .settings-user .avatar-info .password-header,
+#content .main-content .settings .settings-user .avatar-info .avatar-header,
+#content .main-content .settings .password-user .user-info .user-info-header,
+#content .main-content .settings .password-user .user-info .password-header,
+#content .main-content .settings .password-user .user-info .avatar-header,
+#content .main-content .settings .password-user .password-info .user-info-header,
+#content .main-content .settings .password-user .password-info .password-header,
+#content .main-content .settings .password-user .password-info .avatar-header,
+#content .main-content .settings .password-user .avatar-info .user-info-header,
+#content .main-content .settings .password-user .avatar-info .password-header,
+#content .main-content .settings .password-user .avatar-info .avatar-header,
+#content .main-content .settings .avatar-user .user-info .user-info-header,
+#content .main-content .settings .avatar-user .user-info .password-header,
+#content .main-content .settings .avatar-user .user-info .avatar-header,
+#content .main-content .settings .avatar-user .password-info .user-info-header,
+#content .main-content .settings .avatar-user .password-info .password-header,
+#content .main-content .settings .avatar-user .password-info .avatar-header,
+#content .main-content .settings .avatar-user .avatar-info .user-info-header,
+#content .main-content .settings .avatar-user .avatar-info .password-header,
+#content .main-content .settings .avatar-user .avatar-info .avatar-header {
   color: #fff;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
-#content .main-content .settings .settings-user .user-info .user-block {
+#content .main-content .settings .settings-user .user-info .user-block,
+#content .main-content .settings .settings-user .password-info .user-block,
+#content .main-content .settings .settings-user .avatar-info .user-block,
+#content .main-content .settings .password-user .user-info .user-block,
+#content .main-content .settings .password-user .password-info .user-block,
+#content .main-content .settings .password-user .avatar-info .user-block,
+#content .main-content .settings .avatar-user .user-info .user-block,
+#content .main-content .settings .avatar-user .password-info .user-block,
+#content .main-content .settings .avatar-user .avatar-info .user-block {
   max-width: 100%;
+}
+
+#content .main-content .settings .settings-user .user-info .user-block input,
+#content .main-content .settings .settings-user .user-info .user-block select,
+#content .main-content .settings .settings-user .password-info .user-block input,
+#content .main-content .settings .settings-user .password-info .user-block select,
+#content .main-content .settings .settings-user .avatar-info .user-block input,
+#content .main-content .settings .settings-user .avatar-info .user-block select,
+#content .main-content .settings .password-user .user-info .user-block input,
+#content .main-content .settings .password-user .user-info .user-block select,
+#content .main-content .settings .password-user .password-info .user-block input,
+#content .main-content .settings .password-user .password-info .user-block select,
+#content .main-content .settings .password-user .avatar-info .user-block input,
+#content .main-content .settings .password-user .avatar-info .user-block select,
+#content .main-content .settings .avatar-user .user-info .user-block input,
+#content .main-content .settings .avatar-user .user-info .user-block select,
+#content .main-content .settings .avatar-user .password-info .user-block input,
+#content .main-content .settings .avatar-user .password-info .user-block select,
+#content .main-content .settings .avatar-user .avatar-info .user-block input,
+#content .main-content .settings .avatar-user .avatar-info .user-block select {
+  width: 30%;
+  background-color: #303030;
+  border: none;
+  outline: none;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+  text-align: left;
+}
+
+#content .main-content .settings .settings-user .user-info .user-block .submit-btn,
+#content .main-content .settings .settings-user .password-info .user-block .submit-btn,
+#content .main-content .settings .settings-user .avatar-info .user-block .submit-btn,
+#content .main-content .settings .password-user .user-info .user-block .submit-btn,
+#content .main-content .settings .password-user .password-info .user-block .submit-btn,
+#content .main-content .settings .password-user .avatar-info .user-block .submit-btn,
+#content .main-content .settings .avatar-user .user-info .user-block .submit-btn,
+#content .main-content .settings .avatar-user .password-info .user-block .submit-btn,
+#content .main-content .settings .avatar-user .avatar-info .user-block .submit-btn {
+  width: 23%;
+  cursor: pointer;
+  background-color: #9f2f2f;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#content .main-content .settings .settings-user .user-info .user-block .submit-btn:hover,
+#content .main-content .settings .settings-user .password-info .user-block .submit-btn:hover,
+#content .main-content .settings .settings-user .avatar-info .user-block .submit-btn:hover,
+#content .main-content .settings .password-user .user-info .user-block .submit-btn:hover,
+#content .main-content .settings .password-user .password-info .user-block .submit-btn:hover,
+#content .main-content .settings .password-user .avatar-info .user-block .submit-btn:hover,
+#content .main-content .settings .avatar-user .user-info .user-block .submit-btn:hover,
+#content .main-content .settings .avatar-user .password-info .user-block .submit-btn:hover,
+#content .main-content .settings .avatar-user .avatar-info .user-block .submit-btn:hover {
+  background-color: #c53c3c;
+}
+
+#content .main-content .settings .password-user,
+#content .main-content .settings .avatar-user {
+  margin-top: 1rem;
 }
 
 #content #sidebar-content {

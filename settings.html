@@ -89,44 +89,115 @@
           <section class="settings">
             <div class="nav-settings">
               <ul class="nav-links">
-                <li><a href="#user-info-header">Informacje o koncie</a></li>
-                <li><a href="">Powiadomienia</a></li>
-                <li><a href="">Zmiana hasła</a></li>
-                <li><a href="">Avatar</a></li>
-                <li><a href="">Usuń konto</a></li>
+                <li><a href="#">Informacje o koncie</a></li>
+                <li><a href="#">Zmiana hasła</a></li>
+                <li><a href="#">Avatar</a></li>
+                <li><a href="#">Usuń konto</a></li>
               </ul>
             </div>
-            <div class="settings-user my-3">
+            <div class="settings-user">
               <form class="user-info">
                 <h4 class="user-info-header py-1">Informacje o koncie</h4>
                 <div class="user-block">
-                  <label for="name">Imię</label>
-                  <input type="text" name="name" id="name" autocomplete="off" />
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    autocomplete="off"
+                    placeholder="Imię"
+                  />
                 </div>
                 <div class="user-block">
-                  <label for="name">Imię</label>
-                  <input type="text" name="name" id="name" autocomplete="off" />
+                  <select name="sex" id="sex">
+                    <option value="" disabled selected>Wybierz płeć</option>
+                    <option value="female">Kobieta</option>
+                    <option value="male">Mężczyzna</option>
+                  </select>
                 </div>
                 <div class="user-block">
-                  <label for="name">Imię</label>
-                  <input type="text" name="name" id="name" autocomplete="off" />
+                  <input
+                    type="text"
+                    name="country"
+                    id="country"
+                    autocomplete="off"
+                    placeholder="Kraj"
+                  />
                 </div>
                 <div class="user-block">
-                  <label for="name">Imię</label>
-                  <input type="text" name="name" id="name" autocomplete="off" />
+                  <input
+                    type="text"
+                    name="city"
+                    id="city"
+                    autocomplete="off"
+                    placeholder="Miasto"
+                  />
                 </div>
                 <div class="user-block">
-                  <label for="name">Imię</label>
-                  <input type="text" name="name" id="name" autocomplete="off" />
+                  <input
+                    type="text"
+                    name="birthdate"
+                    id="birthdate"
+                    autocomplete="off"
+                    placeholder="Urodziny"
+                    onfocus="(this.type='date')"
+                    onblur="(this.type='text')"
+                  />
                 </div>
                 <div class="user-block">
                   <input
                     type="submit"
                     name="submit"
+                    class="submit-btn"
                     id="submit"
-                    value="zapisz"
+                    value="Zapisz"
                   />
                 </div>
+              </form>
+            </div>
+            <div class="password-user">
+              <form class="password-info">
+                <h4 class="password-header py-1">Zmiana hasła</h4>
+                <div class="user-block">
+                  <input
+                    type="password"
+                    name="password-old"
+                    id="password-old"
+                    autocomplete="off"
+                    placeholder="Stare hasło"
+                  />
+                </div>
+                <div class="user-block">
+                  <input
+                    type="password"
+                    name="password-new"
+                    id="password-new"
+                    autocomplete="off"
+                    placeholder="Nowe hasło"
+                  />
+                </div>
+                <div class="user-block">
+                  <input
+                    type="password"
+                    name="password-new2"
+                    id="password-new2"
+                    autocomplete="off"
+                    placeholder="Powtórz nowe hasło"
+                  />
+                </div>
+                <div class="user-block">
+                  <input
+                    type="submit"
+                    name="submit"
+                    class="submit-btn"
+                    id="submit"
+                    value="Zmień"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="avatar-user">
+              <form class="avatar-info">
+                <h4 class="avatar-header">Avatar</h4>
               </form>
             </div>
           </section>
@@ -168,18 +239,21 @@
               <img
                 src="https://source.unsplash.com/WLUHO9A_xik/1600x900"
                 class="trending-post"
+                alt="Trending post"
               />
             </div>
             <div class="popular-posts">
               <img
                 src="https://source.unsplash.com/WLUHO9A_xik/1600x900"
                 class="trending-post"
+                alt="Trending post"
               />
             </div>
             <div class="popular-posts">
               <img
                 src="https://source.unsplash.com/WLUHO9A_xik/1600x900"
                 class="trending-post"
+                alt="Trending post"
               />
             </div>
           </div>
