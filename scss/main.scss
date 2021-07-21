@@ -1,5 +1,6 @@
 @import "variables";
 @import "utilities";
+@import "delete";
 
 // Reset styles
 
@@ -7,6 +8,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a {
@@ -344,6 +349,36 @@ ul {
           }
         }
       }
+      .delete-acc {
+        background-color: lighten($main-color, 2%);
+        max-width: 85%;
+        margin-bottom: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        .delete-acc-form {
+          .delete-header {
+            color: #fff;
+            font-weight: 400;
+            font-size: 1rem;
+          }
+          .delete-warning {
+            color: #fff;
+            padding-bottom: 2rem;
+            font-size: 0.8rem;
+          }
+          .delete-btn {
+            border: none;
+            outline: none;
+            background-color: lighten($main-color, 2%);
+            color: $secondary-color;
+            cursor: pointer;
+            margin-bottom: 1rem;
+          }
+          .delete-btn:hover {
+            color: lighten($secondary-color, 10%);
+          }
+        }
+      }
       .settings-user,
       .password-user,
       .avatar-user {
@@ -353,10 +388,52 @@ ul {
         margin-bottom: 1rem;
         margin-left: auto;
         margin-right: auto;
-
         .user-info,
         .password-info,
         .avatar-info {
+          .submit-btn {
+            width: 23%;
+            cursor: pointer;
+            background-color: $secondary-color;
+            transition: all 0.2s;
+            text-align: center;
+            border-radius: 5px;
+          }
+          .submit-btn:hover {
+            background-color: lighten($secondary-color, 10%);
+          }
+          input,
+          select {
+            width: 30%;
+            border: none;
+            outline: none;
+            color: #fff;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 1rem;
+            padding: 0.6rem;
+            text-align: left;
+          }
+          label {
+            color: #fff;
+            cursor: pointer;
+            background-color: $main-color;
+            padding: 1rem 3rem;
+          }
+          #file-image-1 {
+            display: none;
+          }
+
+          .preview {
+            .create-post-image {
+              display: none;
+              margin-top: 3rem;
+              width: 200px;
+              height: 200px;
+              margin-right: auto;
+              margin-left: auto;
+            }
+          }
           .user-info-header,
           .password-header,
           .avatar-header {
@@ -390,6 +467,12 @@ ul {
             .submit-btn:hover {
               background-color: lighten($secondary-color, 10%);
             }
+          }
+          .avatar-warning {
+            color: #fff;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            font-size: 0.7rem;
           }
         }
       }

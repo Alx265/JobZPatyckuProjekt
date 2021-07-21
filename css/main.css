@@ -97,11 +97,53 @@
   margin: 10rem 0;
 }
 
+.swal-modal {
+  background-color: #262626;
+  border: 2px solid #404040;
+}
+
+.swal-title {
+  color: #fff;
+}
+
+.swal-text {
+  background-color: #404040;
+  padding: 17px;
+  border: 1px solid #737373;
+  display: block;
+  margin: 22px;
+  text-align: center;
+  color: #fff;
+}
+
+.swal-button--confirm {
+  background-color: #9f2f2f;
+  border: none;
+  outline: none;
+}
+
+.swal-button {
+  border: none;
+  outline: none;
+}
+
+.swal-button:hover {
+  background-color: #262626;
+}
+
+.swal-button--confirm:hover {
+  background-color: #c53c3c;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a {
@@ -554,6 +596,39 @@ ul {
   margin-bottom: 0;
 }
 
+#content .main-content .settings .delete-acc {
+  background-color: #2b2b2b;
+  max-width: 85%;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content .main-content .settings .delete-acc .delete-acc-form .delete-header {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+#content .main-content .settings .delete-acc .delete-acc-form .delete-warning {
+  color: #fff;
+  padding-bottom: 2rem;
+  font-size: 0.8rem;
+}
+
+#content .main-content .settings .delete-acc .delete-acc-form .delete-btn {
+  border: none;
+  outline: none;
+  background-color: #2b2b2b;
+  color: #9f2f2f;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+#content .main-content .settings .delete-acc .delete-acc-form .delete-btn:hover {
+  color: #c53c3c;
+}
+
 #content .main-content .settings .settings-user,
 #content .main-content .settings .password-user,
 #content .main-content .settings .avatar-user {
@@ -563,6 +638,109 @@ ul {
   margin-bottom: 1rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+#content .main-content .settings .settings-user .user-info .submit-btn,
+#content .main-content .settings .settings-user .password-info .submit-btn,
+#content .main-content .settings .settings-user .avatar-info .submit-btn,
+#content .main-content .settings .password-user .user-info .submit-btn,
+#content .main-content .settings .password-user .password-info .submit-btn,
+#content .main-content .settings .password-user .avatar-info .submit-btn,
+#content .main-content .settings .avatar-user .user-info .submit-btn,
+#content .main-content .settings .avatar-user .password-info .submit-btn,
+#content .main-content .settings .avatar-user .avatar-info .submit-btn {
+  width: 23%;
+  cursor: pointer;
+  background-color: #9f2f2f;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#content .main-content .settings .settings-user .user-info .submit-btn:hover,
+#content .main-content .settings .settings-user .password-info .submit-btn:hover,
+#content .main-content .settings .settings-user .avatar-info .submit-btn:hover,
+#content .main-content .settings .password-user .user-info .submit-btn:hover,
+#content .main-content .settings .password-user .password-info .submit-btn:hover,
+#content .main-content .settings .password-user .avatar-info .submit-btn:hover,
+#content .main-content .settings .avatar-user .user-info .submit-btn:hover,
+#content .main-content .settings .avatar-user .password-info .submit-btn:hover,
+#content .main-content .settings .avatar-user .avatar-info .submit-btn:hover {
+  background-color: #c53c3c;
+}
+
+#content .main-content .settings .settings-user .user-info input,
+#content .main-content .settings .settings-user .user-info select,
+#content .main-content .settings .settings-user .password-info input,
+#content .main-content .settings .settings-user .password-info select,
+#content .main-content .settings .settings-user .avatar-info input,
+#content .main-content .settings .settings-user .avatar-info select,
+#content .main-content .settings .password-user .user-info input,
+#content .main-content .settings .password-user .user-info select,
+#content .main-content .settings .password-user .password-info input,
+#content .main-content .settings .password-user .password-info select,
+#content .main-content .settings .password-user .avatar-info input,
+#content .main-content .settings .password-user .avatar-info select,
+#content .main-content .settings .avatar-user .user-info input,
+#content .main-content .settings .avatar-user .user-info select,
+#content .main-content .settings .avatar-user .password-info input,
+#content .main-content .settings .avatar-user .password-info select,
+#content .main-content .settings .avatar-user .avatar-info input,
+#content .main-content .settings .avatar-user .avatar-info select {
+  width: 30%;
+  border: none;
+  outline: none;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+  text-align: left;
+}
+
+#content .main-content .settings .settings-user .user-info label,
+#content .main-content .settings .settings-user .password-info label,
+#content .main-content .settings .settings-user .avatar-info label,
+#content .main-content .settings .password-user .user-info label,
+#content .main-content .settings .password-user .password-info label,
+#content .main-content .settings .password-user .avatar-info label,
+#content .main-content .settings .avatar-user .user-info label,
+#content .main-content .settings .avatar-user .password-info label,
+#content .main-content .settings .avatar-user .avatar-info label {
+  color: #fff;
+  cursor: pointer;
+  background-color: #262626;
+  padding: 1rem 3rem;
+}
+
+#content .main-content .settings .settings-user .user-info #file-image-1,
+#content .main-content .settings .settings-user .password-info #file-image-1,
+#content .main-content .settings .settings-user .avatar-info #file-image-1,
+#content .main-content .settings .password-user .user-info #file-image-1,
+#content .main-content .settings .password-user .password-info #file-image-1,
+#content .main-content .settings .password-user .avatar-info #file-image-1,
+#content .main-content .settings .avatar-user .user-info #file-image-1,
+#content .main-content .settings .avatar-user .password-info #file-image-1,
+#content .main-content .settings .avatar-user .avatar-info #file-image-1 {
+  display: none;
+}
+
+#content .main-content .settings .settings-user .user-info .preview .create-post-image,
+#content .main-content .settings .settings-user .password-info .preview .create-post-image,
+#content .main-content .settings .settings-user .avatar-info .preview .create-post-image,
+#content .main-content .settings .password-user .user-info .preview .create-post-image,
+#content .main-content .settings .password-user .password-info .preview .create-post-image,
+#content .main-content .settings .password-user .avatar-info .preview .create-post-image,
+#content .main-content .settings .avatar-user .user-info .preview .create-post-image,
+#content .main-content .settings .avatar-user .password-info .preview .create-post-image,
+#content .main-content .settings .avatar-user .avatar-info .preview .create-post-image {
+  display: none;
+  margin-top: 3rem;
+  width: 200px;
+  height: 200px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #content .main-content .settings .settings-user .user-info .user-info-header,
@@ -667,6 +845,21 @@ ul {
 #content .main-content .settings .avatar-user .password-info .user-block .submit-btn:hover,
 #content .main-content .settings .avatar-user .avatar-info .user-block .submit-btn:hover {
   background-color: #c53c3c;
+}
+
+#content .main-content .settings .settings-user .user-info .avatar-warning,
+#content .main-content .settings .settings-user .password-info .avatar-warning,
+#content .main-content .settings .settings-user .avatar-info .avatar-warning,
+#content .main-content .settings .password-user .user-info .avatar-warning,
+#content .main-content .settings .password-user .password-info .avatar-warning,
+#content .main-content .settings .password-user .avatar-info .avatar-warning,
+#content .main-content .settings .avatar-user .user-info .avatar-warning,
+#content .main-content .settings .avatar-user .password-info .avatar-warning,
+#content .main-content .settings .avatar-user .avatar-info .avatar-warning {
+  color: #fff;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: 0.7rem;
 }
 
 #content .main-content .settings .password-user,
