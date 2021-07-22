@@ -329,7 +329,7 @@ ul {
         margin-right: auto;
         text-align: left;
         background-color: lighten($main-color, 2%);
-        max-width: 50%;
+        max-width: 70%;
         padding: 2rem;
         .nav-links {
           li {
@@ -363,7 +363,7 @@ ul {
           }
           .delete-warning {
             color: #fff;
-            padding-bottom: 2rem;
+            padding: 0 1rem 1.2rem 1rem;
             font-size: 0.8rem;
           }
           .delete-btn {
@@ -404,7 +404,7 @@ ul {
           }
           input,
           select {
-            width: 30%;
+            width: 100%;
             border: none;
             outline: none;
             color: #fff;
@@ -423,7 +423,6 @@ ul {
           #file-image-1 {
             display: none;
           }
-
           .preview {
             .create-post-image {
               display: none;
@@ -445,7 +444,7 @@ ul {
             max-width: 100%;
             input,
             select {
-              width: 30%;
+              width: 70%;
               background-color: lighten($main-color, 4%);
               border: none;
               outline: none;
@@ -457,7 +456,7 @@ ul {
               text-align: left;
             }
             .submit-btn {
-              width: 23%;
+              width: 25%;
               cursor: pointer;
               background-color: $secondary-color;
               transition: all 0.2s;
